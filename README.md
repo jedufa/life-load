@@ -1,38 +1,122 @@
-# Life Load
+<div align="center">
 
-### Understand your load. Notice your patterns.
+# 🌿 Life Load
 
-A short night, a demanding day, and low energy can be hard to see as one picture. Life Load explores a quieter way to record those signals and understand how a transparent model combines them.
+### Some days feel heavier. Start noticing why.
 
-This experimental Android/Python prototype brings together profile-based check-ins, local storage, explainable scoring and deterministic contracts. The source is here for people who want to inspect the model, adapt the workflow, or carry the project forward.
+**A small space to check in with yourself, and a transparent model to explore the patterns behind everyday load.**
+
+**Notice · Record · Reflect**
+
+[**See the Android experience ↓**](#a-look-inside) &nbsp;·&nbsp; [**Try the Python demo →**](#explore-the-scoring-model) &nbsp;·&nbsp; [**Build the Android app →**](#build-the-android-prototype)
+
+<br>
+
+![Android](https://img.shields.io/badge/Android-Kotlin%20%2B%20Compose-3d795c?style=flat-square)
+![Backend](https://img.shields.io/badge/Python-explainable%20scoring-3776ab?style=flat-square)
+![Privacy](https://img.shields.io/badge/demo-local--first-456069?style=flat-square)
+![MIT](https://img.shields.io/badge/license-MIT-24836b?style=flat-square)
+
+</div>
+
+---
 
 ## A look inside
 
+**Four moments from the real Android prototype.**
+
 <table>
   <tr>
-    <td valign="top"><strong>Choose your focus</strong><br><img src="docs/screenshots/onboarding.png" alt="Real Android onboarding with the General Balance profile selected" width="250"></td>
-    <td valign="top"><strong>Make a small check-in</strong><br><img src="docs/screenshots/checkin.png" alt="Fictional Android check-in with sleep and nutrition choices" width="250"></td>
+    <td align="center" width="50%">
+      <a href="docs/screenshots/onboarding.png"><img src="docs/screenshots/onboarding.png" alt="Actual Android emulator capture showing General Balance onboarding" width="325"></a>
+    </td>
+    <td align="center" width="50%">
+      <a href="docs/screenshots/checkin.png"><img src="docs/screenshots/checkin.png" alt="Actual Android emulator capture showing a fictional sleep and nutrition check-in" width="325"></a>
+    </td>
   </tr>
   <tr>
-    <td valign="top"><strong>Keep it locally</strong><br><img src="docs/screenshots/saved.png" alt="Android confirms a local check-in and says guidance is still pending" width="250"></td>
-    <td valign="top"><strong>Understand the limits</strong><br><img src="docs/screenshots/interpretation.png" alt="Actual Android explanation of guidance quality and insufficient approved data" width="250"></td>
+    <td align="center"><strong>01 · Choose your focus</strong><br><sub>Begin with the generic General Balance profile.</sub></td>
+    <td align="center"><strong>02 · Check in</strong><br><sub>Record a few signals without pretending to know everything.</sub></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="docs/screenshots/saved.png"><img src="docs/screenshots/saved.png" alt="Actual Android emulator capture confirming locally stored pending check-in" width="325"></a>
+    </td>
+    <td align="center">
+      <a href="docs/screenshots/interpretation.png"><img src="docs/screenshots/interpretation.png" alt="Actual Android emulator capture explaining why guidance is unavailable without approved history" width="325"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>03 · Keep your history local</strong><br><sub>Pending entries survive an application restart.</sub></td>
+    <td align="center"><strong>04 · See the uncertainty</strong><br><sub>Insufficient data is a real answer, not a reason to invent a score.</sub></td>
   </tr>
 </table>
 
-Actual API 35 Android emulator captures with fictional input and no personal history. **The native offline demo saves pending check-ins; it does not compute canonical approval or populated weekly guidance.** The separate Python demo below performs real backend approval/scoring in its own local SQLite database. No native-to-backend synchronization is configured in this release.
+<sub>All four images are authentic API 35 Android emulator screenshots using fictional inputs, not concept renders or real personal records.</sub>
 
-## What you can explore
+> **An important boundary:** The Android demo saves **pending** local check-ins. It does **not** generate approved daily scores or populated weekly guidance. The Python demo separately demonstrates canonical approval and scoring in its own SQLite database. **They are not synchronized in this release.**
 
-- **Start with a generic profile.** The Android demo enables `beta_review` and starts with `general_balance`, rather than a personal legacy setup.
-- **Record a little, leave room for uncertainty.** Manual choices and local drafts distinguish missing input from explicit false or zero values.
-- **Keep storage consequences visible.** Android queues local check-ins and offers local deletion. The backend keeps drafts separate from approved truth.
-- **Inspect the model.** Python scoring exposes component contributions, reasons and deterministic golden cases; generic signal/profile contracts remain alongside their consumers.
+---
 
-This is a self-reflection and software research prototype, not a diagnostic, clinical or treatment tool. Its formulas, guidance labels and scores have no established clinical or outcome validity. It does not promise better health, recovery or performance.
+## Why Life Load exists
 
-## Run the verified Python example
+A poor night's sleep, a stressful day, or the feeling that your energy has run out can be easy to notice in isolation. Seeing how several everyday signals fit together is harder.
 
-Python **3.11+** is declared; **3.14.4 on Linux** was verified. Start with a fresh environment:
+Life Load explores a simple idea: **make the inputs visible, make the rules inspectable, and never treat missing information as certainty.**
+
+| | |
+|:--|:--|
+| **🧭 Start with a profile** | Use the generic General Balance configuration rather than somebody else's personal setup. |
+| **📝 Make a small check-in** | Record what you know about the day and leave genuinely missing information missing. |
+| **🏡 Keep the prototype local** | Save pending Android entries on the device and delete them through the privacy controls. |
+| **🔍 See how the model reasons** | Inspect the independent Python scoring engine, its component contributions and deterministic examples. |
+
+**Life Load is a software and self-reflection experiment, not a medical device.** Its scoring model is not clinically validated and cannot diagnose, treat or predict a health condition.
+
+## Two real demonstrations, two different boundaries
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📱 Android
+**A local check-in experience**
+
+Open a native Compose app, select General Balance, enter fictional sleep/nutrition information, save it, restart, and delete it through Settings.
+
+- Native Kotlin / Jetpack Compose
+- Local SQLite/preferences
+- Pending entries, not approved scores
+- No Internet permission in the tested Android build
+
+[**Build Android →**](#build-the-android-prototype)
+
+</td>
+<td width="50%" valign="top">
+
+### 🧮 Python
+**A transparent scoring experiment**
+
+Create a synthetic check-in, approve it through the backend contract, calculate its compatibility score and reasons, then confirm persistence in SQLite.
+
+- Real first-party scoring logic
+- Inspectable contract and golden cases
+- Independent local database
+- No provider, account or hosted service required
+
+[**Try Python →**](#explore-the-scoring-model)
+
+</td>
+</tr>
+</table>
+
+These paths are intentionally described separately. The Android UI does **not** silently borrow evidence from the Python-only workflow.
+
+## Explore the scoring model
+
+The simplest technical entry point is the deterministic Python example.
+
+**Requirements:** Python 3.11+ declared; Linux / Python 3.14.4 actually verified.
 
 ```sh
 git clone https://github.com/jedufa/life-load.git
@@ -43,46 +127,65 @@ python3 -m venv .venv
 .venv/bin/python -m life_load.demo --state-root runtime/synthetic-demo
 ```
 
-The command creates a fictional check-in and generic profile, promotes the backend draft into canonical SQLite truth, and prints the actual compatibility score/reasons plus generic profile bridge metadata. The installed wheel contains its JSON schema/contract/golden resources; no original checkout, existing diary, API key, HTTP server or external service is needed.
+The demonstration uses fictional data, creates a generic profile, saves an approved backend check-in and prints the **actual compatibility score and reasons**. It does not access your diary, connect to Garmin, or configure the Android app.
 
-The native pending queue and backend approved database are deliberately separate demonstrations. The Python compatibility formula remains available alongside generic profile metadata; profile selection does not silently claim a different validated medical model.
+[Explore the scoring implementation →](app/backend/life_load/) &nbsp;·&nbsp; [Read the build and test guide →](docs/BUILD_AND_TEST.md)
 
-## Build and try the Android source
+## Build the Android prototype
 
-Use **Java 17**, Android SDK **35** and build tools **34.0.0**, with the SDK environment configured. The official Gradle **8.9** wrapper and distribution checksum are included; AGP **8.5.2**, Kotlin **1.9.24** and resolved debug/test dependencies are pinned.
+**Requirements:** Java 17, Android SDK 35, build tools 34.0.0 and the included Gradle 8.9 wrapper.
 
 ```sh
 cd app/mobile/android
 ./gradlew --no-daemon :app:assembleDebug :app:testDebugUnitTest :app:assembleDebugAndroidTest
 ```
 
-On your own disposable emulator, install the generated debug APK and open Life Load. Choose **General Balance**, start the first check-in, choose sleep/nutrition values and save. Restart the application to see the same choices. Local deletion is in the expanded Privacy section of Settings. These APKs are local build output; this release publishes no app binary or store listing. See [build and test](docs/BUILD_AND_TEST.md) for the two explicit instrumentation methods and clean-data assumptions.
+Install the generated **debug** APK on a disposable emulator, then follow the check-in, restart and privacy-deletion workflow documented in [BUILD_AND_TEST.md](docs/BUILD_AND_TEST.md).
 
-Dependency resolution during setup/build uses PyPI, Gradle and Maven repositories. The Android application itself has **no INTERNET permission**, including transitive manifest merges, and requires no account for the demonstrated local workflow. Online controls/integrations are unsupported in this scoped release.
+No APK, app-store listing, or signed production application is provided in this GitHub release.
 
-| Surface | Verified scope |
-| --- | --- |
-| Python | Fresh hashed dependencies, installed wheel/resources, canonical synthetic check-in/score/persistence |
-| Android | Fresh debug build, 350 JVM tests, real Compose check-in/restart/delete with host SQLite checks |
-| Product regressions | 525 Python tests including ten scoring-contract tests; unchanged formula thresholds |
-| Images | Four authentic API 35 emulator captures; no mockups |
-| First-party license | [MIT](LICENSE); [third-party terms](THIRD_PARTY_NOTICES.md) separately |
-| Status | Experimental, unmaintained, looking for a maintainer |
+## Built to be questioned
 
-Run the Python tests with `.venv/bin/python -m pytest -q -p no:cacheprovider tests/life_load`. The demonstrated evidence is engineering validation, not production or medical Qualification; coverage percentage was not measured.
+**This is more than a collection of screens.** The published source retains extensive regression tests and reproducibility checks.
 
-## Privacy and limits
+| Verified engineering check | Reported result |
+|:--|--:|
+| Python tests | **525 passed** |
+| Android JVM tests | **350 passed** |
+| Real Android instrumentation methods | **2 passed** |
+| Fresh wheel/resource installation | **Passed** |
+| Check-in persistence and deletion, cross-checked via SQLite | **Passed** |
 
-Android uses ordinary app SQLite/preferences; the Python demo writes ordinary local files. Neither is an encrypted vault. Exports can reveal their contents; retain local data appropriately and use synthetic records while experimenting. Experimental crypto/backup modules do not establish encrypted native storage or production backup security. See [security](SECURITY.md).
+The Android tests exercised real Compose controls on an API 35 emulator. A fresh Python install independently verified synthetic approval, score computation, and storage. The release reports no percentage coverage, clinical validation or production security certification.
 
-The snapshot excludes hosted developer/deployment servers, backend-test app, original diaries/research datasets, historical reports, gateway integration, original branding PNGs and private Git history. Optional Python Garmin, AI/Codex extraction, object-store and PostgreSQL integrations are unverified and unused by the documented demo. `cryptography` is an explicit runtime dependency; optional integration packages are separate extras. No paid/subscription infrastructure is configured.
+[Technical validation →](docs/BUILD_AND_TEST.md) &nbsp;·&nbsp; [Release history →](CHANGELOG.md)
 
-Physical devices, reminder delivery/permissions, device-specific sharing/import/export, real provider calls, network privacy beyond the removed app permission, full native approval/weekly scoring and production hosting are unverified. The browser page in the original project was a placeholder and is omitted here. Windows/macOS and the declared minimum Python version were not separately exercised.
+## Private by design, with honest limits
 
-## Take it further
+The verified Android variant has **no Internet permission** and no account is required for the demonstrated offline flow. The repository excludes real diaries, historic research datasets, original personal records and private Git history.
 
-Inspect the scoring contract in `app/backend/life_load/`, the native app in `app/mobile/android/`, and shared signals in `app/shared/contracts/`. Keep formulas and tests together, and make uncertainty visible before adding stronger claims.
+However, ordinary SQLite/preferences and local Python files are **not an encrypted vault**. Optional Garmin, AI/Codex extraction, cloud storage and other integration code is experimental, not part of the verified demo.
 
-**Independent forks are welcome.** Support, PR review, security updates and future releases are not guaranteed. A new maintainer can take this prototype further; start with [contributing](CONTRIBUTING.md).
+**Not yet demonstrated:** physical-device behavior, reminders and permissions, full Android approval/scoring/sync, real providers, export/import round trips, clinical efficacy, or production hosting.
 
-Copyright (c) 2026 Jean-Francois Dufour. First-party code and tests are [MIT licensed](LICENSE); upstream materials retain their own terms.
+[Security and privacy notes →](SECURITY.md)
+
+## Continue the experiment
+
+Life Load is an **experimental, source-only project** shared so others can study the models, question the assumptions, adapt the UI or carry the work further.
+
+The project is **unmaintained and looking for a maintainer**. Independent forks are welcome; issues, pull-request review, security updates and future releases are not guaranteed.
+
+[**Fork Life Load →**](https://github.com/jedufa/life-load/fork) &nbsp;·&nbsp; [**Contributing guide →**](CONTRIBUTING.md) &nbsp;·&nbsp; [**Source prerelease →**](https://github.com/jedufa/life-load/releases/tag/v0.1.2-oss.1)
+
+First-party code and tests: **[MIT License](LICENSE)** · Copyright © 2026 Jean-Francois Dufour. [Third-party notices](THIRD_PARTY_NOTICES.md) retain their original terms.
+
+---
+
+<div align="center">
+
+### A clearer picture begins with a small check-in.
+
+*Understand your load. Notice your patterns.*
+
+</div>
