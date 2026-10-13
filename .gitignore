@@ -27,3 +27,17 @@ secrets.env
 *.pem
 *.jks
 *.keystore
+
+# Privacy: local credentials, exports and test caches
+.env*
+!.env.example
+!.env.sample
+!.env.template
+!*.env.example
+!*.env.sample
+!*.env.template
+*.p12
+*.p8
+/exports/
+/attachments/
+/local-backups/

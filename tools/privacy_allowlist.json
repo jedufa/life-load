@@ -1,0 +1,226 @@
+[
+  {
+    "path": "app/backend/life_load/backend_test_app.py",
+    "rule": "literal_credential",
+    "line": 26,
+    "blob_sha256": "37c983dbf081e51677746eeb734b10a0a076778d5ddad2f7acd82ae9605c87a8",
+    "reason": "Explicit DEFAULT_FIXTURE_PASSWORD for disposable backend test accounts, not a production secret."
+  },
+  {
+    "path": "app/backend/life_load/backend_test_app.py",
+    "rule": "private_host",
+    "line": 1149,
+    "blob_sha256": "37c983dbf081e51677746eeb734b10a0a076778d5ddad2f7acd82ae9605c87a8",
+    "reason": "Synthetic fixture email domain produced for the backend test account helper."
+  },
+  {
+    "path": "app/mobile/android/app/src/test/java/com/life/lifeload/HttpLifeLoadApiTest.kt",
+    "rule": "literal_credential",
+    "line": 274,
+    "blob_sha256": "80efb06816e0511d99aec120656a67fb728507370f389886fbcee537d365b574",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "app/mobile/android/app/src/test/java/com/life/lifeload/util/AppLoggerTest.kt",
+    "rule": "literal_credential",
+    "line": 14,
+    "blob_sha256": "ddf954da88ff21d4aeaed585f27b36cfae53c3a6a2530c489a248dc44901f761",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_backend_edge_contracts.py",
+    "rule": "literal_credential",
+    "line": 165,
+    "blob_sha256": "05f9751be165aaa22d47b935f6d293bc26a310c5e47df5c5afa2d398b7012124",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_backend_edge_contracts.py",
+    "rule": "literal_credential",
+    "line": 923,
+    "blob_sha256": "05f9751be165aaa22d47b935f6d293bc26a310c5e47df5c5afa2d398b7012124",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_backend_edge_contracts.py",
+    "rule": "private_host",
+    "line": 837,
+    "blob_sha256": "05f9751be165aaa22d47b935f6d293bc26a310c5e47df5c5afa2d398b7012124",
+    "reason": "Synthetic MinIO endpoint used in a mocked object-store/configuration test, not a deployment address."
+  },
+  {
+    "path": "tests/life_load/test_backend_edge_contracts.py",
+    "rule": "private_host",
+    "line": 1941,
+    "blob_sha256": "05f9751be165aaa22d47b935f6d293bc26a310c5e47df5c5afa2d398b7012124",
+    "reason": "Synthetic MinIO endpoint used in a mocked object-store/configuration test, not a deployment address."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend.py",
+    "rule": "literal_credential",
+    "line": 26,
+    "blob_sha256": "5cf85254be5aea23fe36c3d30485c89e80241c57d716fb518dcb1c2036084a06",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend.py",
+    "rule": "literal_credential",
+    "line": 67,
+    "blob_sha256": "5cf85254be5aea23fe36c3d30485c89e80241c57d716fb518dcb1c2036084a06",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend.py",
+    "rule": "literal_credential",
+    "line": 230,
+    "blob_sha256": "5cf85254be5aea23fe36c3d30485c89e80241c57d716fb518dcb1c2036084a06",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 18,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 73,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 79,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 124,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 136,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 161,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 179,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 185,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 252,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 326,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 433,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 477,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 561,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 572,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 594,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "tests/life_load/test_remote_backend_api.py",
+    "rule": "literal_credential",
+    "line": 672,
+    "blob_sha256": "4ef9e68c3adb642ebf24a708fd17a8fbb78f82f197eb49d95ac7743191fdd337",
+    "reason": "Fixed synthetic credential used by the isolated authentication or redaction regression fixture; no live service credential."
+  },
+  {
+    "path": "third_party/pygments/licenses/AUTHORS",
+    "rule": "personal_email",
+    "line": 1,
+    "blob_sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+    "reason": "Required upstream copyright or contributor attribution, retained with the original licensed text."
+  },
+  {
+    "path": "third_party/pygments/licenses/AUTHORS",
+    "rule": "personal_email",
+    "line": 3,
+    "blob_sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+    "reason": "Required upstream copyright or contributor attribution, retained with the original licensed text."
+  },
+  {
+    "path": "third_party/pygments/licenses/AUTHORS",
+    "rule": "personal_email",
+    "line": 4,
+    "blob_sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+    "reason": "Required upstream copyright or contributor attribution, retained with the original licensed text."
+  },
+  {
+    "path": "third_party/setuptools/licenses/LICENSE.txt",
+    "rule": "personal_email",
+    "line": 3,
+    "blob_sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+    "reason": "Required upstream copyright or contributor attribution, retained with the original licensed text."
+  },
+  {
+    "path": "third_party/wheel/licenses/LICENSE.txt",
+    "rule": "personal_email",
+    "line": 3,
+    "blob_sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+    "reason": "Required upstream copyright or contributor attribution, retained with the original licensed text."
+  }
+]
