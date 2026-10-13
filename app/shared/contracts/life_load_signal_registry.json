@@ -1,0 +1,1172 @@
+{
+  "generated_from": "backend.life_load.signal_registry",
+  "influence_policies": [
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy"
+      ],
+      "clinical_boundary": "out_of_scope_if_urgent",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private",
+      "signal_id": "body.foot_pain",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "body_signal_awareness",
+        "personal_legacy",
+        "training_recovery"
+      ],
+      "clinical_boundary": "out_of_scope_if_urgent",
+      "guidance_effect": "guardrail",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private",
+      "signal_id": "body.migraine_warning",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy"
+      ],
+      "clinical_boundary": "out_of_scope_if_urgent",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private",
+      "signal_id": "body.shoulder_pain",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "general_balance",
+        "personal_legacy",
+        "training_recovery"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "normal",
+      "minimum_data_required": 1,
+      "polarity": "capacity_positive",
+      "sensitivity_class": "normal",
+      "signal_id": "core.nutrition_ok",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "general_balance",
+        "personal_legacy",
+        "training_recovery",
+        "work_stress"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "capacity_positive",
+      "sensitivity_class": "normal",
+      "signal_id": "core.sleep_ok",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "body_signal_awareness",
+        "general_balance",
+        "personal_legacy",
+        "training_recovery",
+        "work_stress"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "normal",
+      "minimum_data_required": 1,
+      "polarity": "capacity_positive",
+      "sensitivity_class": "normal",
+      "signal_id": "energy.energy",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy"
+      ],
+      "clinical_boundary": "out_of_scope_if_urgent",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private",
+      "signal_id": "evening.evening_chain_broken",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy",
+        "work_stress"
+      ],
+      "clinical_boundary": "out_of_scope_if_urgent",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private",
+      "signal_id": "evening.phone_after_21",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "body_signal_awareness",
+        "general_balance",
+        "personal_legacy",
+        "training_recovery",
+        "work_stress"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "capacity_negative",
+      "sensitivity_class": "private",
+      "signal_id": "mental.stress",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "body_signal_awareness",
+        "general_balance",
+        "personal_legacy",
+        "work_stress"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "light",
+      "minimum_data_required": 2,
+      "polarity": "neutral",
+      "sensitivity_class": "private",
+      "signal_id": "mood.mood",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy"
+      ],
+      "clinical_boundary": "never_suggest_treatment",
+      "guidance_effect": "guardrail",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private_plus",
+      "signal_id": "nutrition.alcohol",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy"
+      ],
+      "clinical_boundary": "never_suggest_treatment",
+      "guidance_effect": "guardrail",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private_plus",
+      "signal_id": "nutrition.binge",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "general_balance",
+        "personal_legacy",
+        "training_recovery"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "light",
+      "minimum_data_required": 1,
+      "polarity": "protective",
+      "sensitivity_class": "normal",
+      "signal_id": "recovery.decompression_done",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "general_balance",
+        "personal_legacy"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "normal",
+      "minimum_data_required": 1,
+      "polarity": "protective",
+      "sensitivity_class": "normal",
+      "signal_id": "recovery.shutdown_done",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy",
+        "training_recovery"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "normal",
+      "minimum_data_required": 1,
+      "polarity": "neutral",
+      "sensitivity_class": "normal",
+      "signal_id": "training.activity_duration_min",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy",
+        "training_recovery"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "normal",
+      "minimum_data_required": 1,
+      "polarity": "neutral",
+      "sensitivity_class": "normal",
+      "signal_id": "training.primary_activity_type",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy",
+        "work_stress"
+      ],
+      "clinical_boundary": "out_of_scope_if_urgent",
+      "guidance_effect": "strong",
+      "minimum_data_required": 1,
+      "polarity": "warning",
+      "sensitivity_class": "private",
+      "signal_id": "work.project_overrun",
+      "user_editable": true,
+      "version": 1
+    },
+    {
+      "applies_to_profile_ids": [
+        "personal_legacy",
+        "work_stress"
+      ],
+      "clinical_boundary": "wellness_only",
+      "guidance_effect": "normal",
+      "minimum_data_required": 2,
+      "polarity": "capacity_negative",
+      "sensitivity_class": "normal",
+      "signal_id": "work.work_intensity",
+      "user_editable": true,
+      "version": 1
+    }
+  ],
+  "optional_packs": [
+    {
+      "default_enabled": false,
+      "description": "External pressure and invisible load signals.",
+      "id": "life_load_pack",
+      "max_active_signals_added": 4,
+      "name": "Life load pack",
+      "placeholder_signal_ids": [
+        "placeholder.admin_load",
+        "placeholder.care_demand",
+        "placeholder.conflict_friction",
+        "placeholder.family_load",
+        "placeholder.schedule_pressure"
+      ],
+      "requires_explicit_opt_in": false,
+      "sensitive": false,
+      "signal_ids": [
+        "relationship.family_stress",
+        "work.home_office",
+        "work.project_overrun",
+        "work.work_intensity"
+      ],
+      "version": 1
+    },
+    {
+      "default_enabled": false,
+      "description": "Private pattern awareness for risky pulls and protective routines.",
+      "id": "pattern_awareness_pack",
+      "max_active_signals_added": 5,
+      "name": "Pattern awareness pack",
+      "placeholder_signal_ids": [
+        "placeholder.avoidance",
+        "placeholder.eating_pattern",
+        "placeholder.evening_risk",
+        "placeholder.more_than_intended",
+        "placeholder.overtraining_urge",
+        "placeholder.protective_routine_done",
+        "placeholder.protective_routine_missed",
+        "placeholder.risk_pull"
+      ],
+      "requires_explicit_opt_in": true,
+      "sensitive": true,
+      "signal_ids": [
+        "evening.evening_chain_broken",
+        "evening.phone_after_21",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "work.project_overrun"
+      ],
+      "version": 1
+    }
+  ],
+  "profiles": [
+    {
+      "allowed_optional_pack_ids": [
+        "life_load_pack"
+      ],
+      "default_formula_modifier_id": null,
+      "description": "Future profile for generic body-signal tracking.",
+      "disabled_signal_ids": [
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school"
+      ],
+      "guidance_bridge_policy_id": "body_signal_awareness_v0",
+      "hidden_signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain"
+      ],
+      "id": "body_signal_awareness",
+      "max_active_signals": 8,
+      "name": "Body signal awareness",
+      "optional_signal_ids": [
+        "body.migraine_warning"
+      ],
+      "placeholder_signal_ids": [
+        "placeholder.body_signal_instance"
+      ],
+      "required_for_confidence_signal_ids": [
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress"
+      ],
+      "signal_ids": [
+        "body.foot_pain",
+        "body.migraine_warning",
+        "body.shoulder_pain",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "mood.mood",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school"
+      ],
+      "version": 1,
+      "visible_signal_ids": [
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "mood.mood"
+      ]
+    },
+    {
+      "allowed_optional_pack_ids": [],
+      "default_formula_modifier_id": null,
+      "description": "Metadata-only placeholder for future custom profile creation.",
+      "disabled_signal_ids": [],
+      "guidance_bridge_policy_id": null,
+      "hidden_signal_ids": [],
+      "id": "custom_stub",
+      "max_active_signals": 3,
+      "name": "Custom stub",
+      "optional_signal_ids": [],
+      "placeholder_signal_ids": [
+        "placeholder.custom_profile_editor"
+      ],
+      "required_for_confidence_signal_ids": [
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress"
+      ],
+      "signal_ids": [
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress"
+      ],
+      "version": 1,
+      "visible_signal_ids": [
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress"
+      ]
+    },
+    {
+      "allowed_optional_pack_ids": [
+        "life_load_pack",
+        "pattern_awareness_pack"
+      ],
+      "default_formula_modifier_id": "balanced",
+      "description": "Future broad profile focused on core recovery, stress, energy, and mood.",
+      "disabled_signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school",
+        "training.primary_activity_type"
+      ],
+      "guidance_bridge_policy_id": "general_balance_v0",
+      "hidden_signal_ids": [],
+      "id": "general_balance",
+      "max_active_signals": 8,
+      "name": "General balance",
+      "optional_signal_ids": [
+        "recovery.after_work_decompression_done",
+        "recovery.decompression_done"
+      ],
+      "placeholder_signal_ids": [
+        "placeholder.body_state",
+        "placeholder.life_load"
+      ],
+      "required_for_confidence_signal_ids": [
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress"
+      ],
+      "signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "mood.mood",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "recovery.after_work_decompression_done",
+        "recovery.decompression_done",
+        "recovery.shutdown_done",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school",
+        "training.primary_activity_type"
+      ],
+      "version": 1,
+      "visible_signal_ids": [
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "mood.mood",
+        "recovery.shutdown_done"
+      ]
+    },
+    {
+      "allowed_optional_pack_ids": [
+        "life_load_pack",
+        "pattern_awareness_pack"
+      ],
+      "default_formula_modifier_id": null,
+      "description": "Compatibility wrapper for the current fixed Life Load behavior.",
+      "disabled_signal_ids": [],
+      "guidance_bridge_policy_id": "fixed_field_legacy",
+      "hidden_signal_ids": [],
+      "id": "personal_legacy",
+      "max_active_signals": 32,
+      "name": "Personal legacy",
+      "optional_signal_ids": [],
+      "placeholder_signal_ids": [],
+      "required_for_confidence_signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain",
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "training.primary_activity_type"
+      ],
+      "signal_ids": [
+        "body.foot_pain",
+        "body.migraine_warning",
+        "body.other_symptoms",
+        "body.shoulder_pain",
+        "caregiving.alone_home",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "evening.evening_chain_broken",
+        "evening.phone_after_21",
+        "mental.stress",
+        "mood.mood",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "recovery.after_work_decompression_done",
+        "recovery.decompression_done",
+        "recovery.shutdown_done",
+        "relationship.family_stress",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school",
+        "stimulant.coffee_cups",
+        "training.activity_duration_min",
+        "training.activity_types",
+        "training.primary_activity_type",
+        "training.rehab_done",
+        "work.home_office",
+        "work.project_overrun",
+        "work.work_intensity"
+      ],
+      "version": 1,
+      "visible_signal_ids": [
+        "body.foot_pain",
+        "body.migraine_warning",
+        "body.other_symptoms",
+        "body.shoulder_pain",
+        "caregiving.alone_home",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "evening.evening_chain_broken",
+        "evening.phone_after_21",
+        "mental.stress",
+        "mood.mood",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "recovery.after_work_decompression_done",
+        "recovery.decompression_done",
+        "recovery.shutdown_done",
+        "relationship.family_stress",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school",
+        "stimulant.coffee_cups",
+        "training.activity_duration_min",
+        "training.activity_types",
+        "training.primary_activity_type",
+        "training.rehab_done",
+        "work.home_office",
+        "work.project_overrun",
+        "work.work_intensity"
+      ]
+    },
+    {
+      "allowed_optional_pack_ids": [
+        "life_load_pack"
+      ],
+      "default_formula_modifier_id": "sports_light",
+      "description": "Future profile for recreational training recovery.",
+      "disabled_signal_ids": [
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school"
+      ],
+      "guidance_bridge_policy_id": "training_recovery_v0",
+      "hidden_signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain"
+      ],
+      "id": "training_recovery",
+      "max_active_signals": 8,
+      "name": "Training recovery",
+      "optional_signal_ids": [
+        "body.migraine_warning",
+        "recovery.decompression_done"
+      ],
+      "placeholder_signal_ids": [],
+      "required_for_confidence_signal_ids": [
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "training.primary_activity_type"
+      ],
+      "signal_ids": [
+        "body.foot_pain",
+        "body.migraine_warning",
+        "body.shoulder_pain",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "nutrition.alcohol",
+        "nutrition.binge",
+        "recovery.decompression_done",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school",
+        "training.activity_duration_min",
+        "training.primary_activity_type",
+        "training.rehab_done"
+      ],
+      "version": 1,
+      "visible_signal_ids": [
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "training.activity_duration_min",
+        "training.primary_activity_type",
+        "training.rehab_done"
+      ]
+    },
+    {
+      "allowed_optional_pack_ids": [
+        "pattern_awareness_pack"
+      ],
+      "default_formula_modifier_id": "balanced",
+      "description": "Future profile for work pressure and overload prevention.",
+      "disabled_signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school"
+      ],
+      "guidance_bridge_policy_id": "work_stress_v0",
+      "hidden_signal_ids": [],
+      "id": "work_stress",
+      "max_active_signals": 8,
+      "name": "Work stress",
+      "optional_signal_ids": [
+        "evening.phone_after_21",
+        "work.project_overrun"
+      ],
+      "placeholder_signal_ids": [],
+      "required_for_confidence_signal_ids": [
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress"
+      ],
+      "signal_ids": [
+        "body.foot_pain",
+        "body.shoulder_pain",
+        "caregiving.homework_done",
+        "caregiving.homework_status",
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "evening.phone_after_21",
+        "mental.stress",
+        "mood.mood",
+        "relationship.wife_conflict_chores",
+        "relationship.wife_conflict_count",
+        "relationship.wife_conflict_other",
+        "relationship.wife_conflict_school",
+        "work.home_office",
+        "work.project_overrun",
+        "work.work_intensity"
+      ],
+      "version": 1,
+      "visible_signal_ids": [
+        "core.nutrition_ok",
+        "core.sleep_ok",
+        "energy.energy",
+        "mental.stress",
+        "mood.mood",
+        "work.home_office",
+        "work.work_intensity"
+      ]
+    }
+  ],
+  "schema_version": "life_load_signal_registry_contract_v1",
+  "signals": [
+    {
+      "category": "body_signal",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "body_pain",
+      "id": "body.foot_pain",
+      "label": "Foot pain",
+      "legacy_field_key": "foot_pain",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": true,
+      "scale_type": "ordinal_0_10",
+      "version": 1
+    },
+    {
+      "category": "body_signal",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "body_warning",
+      "id": "body.migraine_warning",
+      "label": "Migraine warning",
+      "legacy_field_key": "migraine_warning",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "body_signal",
+      "classification": "configurable_signal",
+      "default_visibility": "hidden",
+      "guidance_bridge_key": "body_context",
+      "id": "body.other_symptoms",
+      "label": "Other symptoms",
+      "legacy_field_key": "other_symptoms",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "text",
+      "version": 1
+    },
+    {
+      "category": "body_signal",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "body_pain",
+      "id": "body.shoulder_pain",
+      "label": "Shoulder pain",
+      "legacy_field_key": "shoulder_pain",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": true,
+      "scale_type": "ordinal_0_10",
+      "version": 1
+    },
+    {
+      "category": "caregiving_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "alone_home_context",
+      "id": "caregiving.alone_home",
+      "label": "Alone home",
+      "legacy_field_key": "alone_home",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "caregiving_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "homework_context",
+      "id": "caregiving.homework_done",
+      "label": "Homework done",
+      "legacy_field_key": "homework_done",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "caregiving_context",
+      "classification": "legacy_only_compatibility",
+      "default_visibility": "legacy_only",
+      "guidance_bridge_key": "homework_context",
+      "id": "caregiving.homework_status",
+      "label": "Homework status",
+      "legacy_field_key": "homework_status",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "enum",
+      "version": 1
+    },
+    {
+      "category": "core_recovery",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "nutrition_recovery",
+      "id": "core.nutrition_ok",
+      "label": "Nutrition clean",
+      "legacy_field_key": "nutrition_ok",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "core_recovery",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "sleep_recovery",
+      "id": "core.sleep_ok",
+      "label": "Sleep on time",
+      "legacy_field_key": "sleep_ok",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "energy_mood",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "energy_recovery",
+      "id": "energy.energy",
+      "label": "Energy",
+      "legacy_field_key": "energy",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "ordinal_0_10",
+      "version": 1
+    },
+    {
+      "category": "evening_boundary",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "evening_sequence",
+      "id": "evening.evening_chain_broken",
+      "label": "Evening chain broken",
+      "legacy_field_key": "evening_chain_broken",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "evening_boundary",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "late_phone",
+      "id": "evening.phone_after_21",
+      "label": "Phone after 21:00",
+      "legacy_field_key": "phone_after_21",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "mental_load",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "stress_load",
+      "id": "mental.stress",
+      "label": "Stress",
+      "legacy_field_key": "stress",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "ordinal_0_10",
+      "version": 1
+    },
+    {
+      "category": "metadata",
+      "classification": "metadata",
+      "default_visibility": "hidden",
+      "guidance_bridge_key": null,
+      "id": "metadata.date",
+      "label": "Entry date",
+      "legacy_field_key": "date",
+      "privacy_class": "local_only",
+      "required_for_confidence": false,
+      "scale_type": "text",
+      "version": 1
+    },
+    {
+      "category": "metadata",
+      "classification": "metadata",
+      "default_visibility": "hidden",
+      "guidance_bridge_key": null,
+      "id": "metadata.diary_summary",
+      "label": "Diary summary",
+      "legacy_field_key": "diary_summary",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "text",
+      "version": 1
+    },
+    {
+      "category": "metadata",
+      "classification": "metadata",
+      "default_visibility": "optional",
+      "guidance_bridge_key": null,
+      "id": "metadata.diary_text",
+      "label": "Diary text",
+      "legacy_field_key": "diary_text",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "text",
+      "version": 1
+    },
+    {
+      "category": "metadata",
+      "classification": "metadata",
+      "default_visibility": "optional",
+      "guidance_bridge_key": null,
+      "id": "metadata.tags",
+      "label": "Tags",
+      "legacy_field_key": "tags",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "text",
+      "version": 1
+    },
+    {
+      "category": "energy_mood",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "mood_recovery",
+      "id": "mood.mood",
+      "label": "Mood",
+      "legacy_field_key": "mood",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "ordinal_0_10",
+      "version": 1
+    },
+    {
+      "category": "nutrition_risk",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "alcohol_exposure",
+      "id": "nutrition.alcohol",
+      "label": "Alcohol",
+      "legacy_field_key": "alcohol",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "enum",
+      "version": 1
+    },
+    {
+      "category": "nutrition_risk",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "food_risk",
+      "id": "nutrition.binge",
+      "label": "Eating episode",
+      "legacy_field_key": "binge",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "core_recovery",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "after_work_decompression",
+      "id": "recovery.after_work_decompression_done",
+      "label": "After-work decompression",
+      "legacy_field_key": "after_work_decompression_done",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "core_recovery",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "decompression_recovery",
+      "id": "recovery.decompression_done",
+      "label": "Decompression done",
+      "legacy_field_key": "decompression_done",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "core_recovery",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "shutdown_recovery",
+      "id": "recovery.shutdown_done",
+      "label": "Shutdown done",
+      "legacy_field_key": "shutdown_done",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "relationship_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "relationship_context",
+      "id": "relationship.family_stress",
+      "label": "Family stress",
+      "legacy_field_key": "family_stress",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "ordinal_0_10",
+      "version": 1
+    },
+    {
+      "category": "relationship_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "relationship_conflict_detail",
+      "id": "relationship.wife_conflict_chores",
+      "label": "Chores conflict",
+      "legacy_field_key": "wife_conflict_chores",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "relationship_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "relationship_conflict",
+      "id": "relationship.wife_conflict_count",
+      "label": "Relationship conflict count",
+      "legacy_field_key": "wife_conflict_count",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "bounded_int",
+      "version": 1
+    },
+    {
+      "category": "relationship_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "relationship_conflict_detail",
+      "id": "relationship.wife_conflict_other",
+      "label": "Other relationship conflict",
+      "legacy_field_key": "wife_conflict_other",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "relationship_context",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "relationship_conflict_detail",
+      "id": "relationship.wife_conflict_school",
+      "label": "School conflict",
+      "legacy_field_key": "wife_conflict_school",
+      "privacy_class": "sensitive_label",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "nutrition_risk",
+      "classification": "configurable_signal",
+      "default_visibility": "optional",
+      "guidance_bridge_key": "stimulant_context",
+      "id": "stimulant.coffee_cups",
+      "label": "Coffee cups",
+      "legacy_field_key": "coffee_cups",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "bounded_int",
+      "version": 1
+    },
+    {
+      "category": "training_load",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "training_duration",
+      "id": "training.activity_duration_min",
+      "label": "Activity duration minutes",
+      "legacy_field_key": "activity_duration_min",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "duration_minutes",
+      "version": 1
+    },
+    {
+      "category": "training_load",
+      "classification": "configurable_signal",
+      "default_visibility": "optional",
+      "guidance_bridge_key": "training_activity",
+      "id": "training.activity_types",
+      "label": "Activity types",
+      "legacy_field_key": "activity_types",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "enum",
+      "version": 1
+    },
+    {
+      "category": "training_load",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "training_activity",
+      "id": "training.primary_activity_type",
+      "label": "Primary activity type",
+      "legacy_field_key": "primary_activity_type",
+      "privacy_class": "exportable",
+      "required_for_confidence": true,
+      "scale_type": "enum",
+      "version": 1
+    },
+    {
+      "category": "training_load",
+      "classification": "configurable_signal",
+      "default_visibility": "optional",
+      "guidance_bridge_key": "training_rehab",
+      "id": "training.rehab_done",
+      "label": "Rehab done",
+      "legacy_field_key": "rehab_done",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "work_load",
+      "classification": "configurable_signal",
+      "default_visibility": "optional",
+      "guidance_bridge_key": "home_office_context",
+      "id": "work.home_office",
+      "label": "Home office",
+      "legacy_field_key": "home_office",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "work_load",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "project_spillover",
+      "id": "work.project_overrun",
+      "label": "Project overrun",
+      "legacy_field_key": "project_overrun",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "boolean",
+      "version": 1
+    },
+    {
+      "category": "work_load",
+      "classification": "configurable_signal",
+      "default_visibility": "visible",
+      "guidance_bridge_key": "work_intensity",
+      "id": "work.work_intensity",
+      "label": "Work intensity",
+      "legacy_field_key": "work_intensity",
+      "privacy_class": "exportable",
+      "required_for_confidence": false,
+      "scale_type": "enum",
+      "version": 1
+    }
+  ]
+}

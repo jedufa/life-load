@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+  <!-- Calm Compass, based on the branding reference: ring + centered compass star. -->
+  <path
+      android:pathData="M24,54 A30,30 0,1,1 84,54 A30,30 0,1,1 24,54"
+      android:fillColor="#00000000"
+      android:strokeColor="#1F7A67"
+      android:strokeAlpha="0.24"
+      android:strokeWidth="7"
+      android:strokeLineCap="round" />
+  <path
+      android:pathData="M28,54 A26,26 0,1,1 80,54 A26,26 0,1,1 28,54"
+      android:fillColor="#00000000"
+      android:strokeColor="#1F7A67"
+      android:strokeWidth="2.8"
+      android:strokeLineCap="round" />
+
+  <!-- Main direction point. -->
+  <path
+      android:pathData="M54,24 C57,36 60,45 65,54 C60,51 57,50 54,50 C51,50 48,51 43,54 C48,45 51,36 54,24 Z"
+      android:fillColor="#1F7A67" />
+
+  <!-- Balancing points. -->
+  <path
+      android:pathData="M54,84 C51,72 48,63 43,54 C48,57 51,58 54,58 C57,58 60,57 65,54 C60,63 57,72 54,84 Z"
+      android:fillColor="#96C3A7" />
+  <path
+      android:pathData="M24,54 C36,51 45,48 54,43 C51,48 50,51 50,54 C50,57 51,60 54,65 C45,60 36,57 24,54 Z"
+      android:fillColor="#96C3A7"
+      android:fillAlpha="0.82" />
+  <path
+      android:pathData="M84,54 C72,57 63,60 54,65 C57,60 58,57 58,54 C58,51 57,48 54,43 C63,48 72,51 84,54 Z"
+      android:fillColor="#96C3A7"
+      android:fillAlpha="0.82" />
+
+  <!-- Small next-step accent on the direction point, with a quiet center. -->
+  <path
+      android:pathData="M54,29 L57,41 L54,38 L51,41 Z"
+      android:fillColor="#D4A14A" />
+  <path
+      android:pathData="M54,54 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"
+      android:fillColor="#FBFAF6" />
+  <path
+      android:pathData="M50,54 L54,50 L58,54 L54,58 Z"
+      android:fillColor="#1F7A67"
+      android:fillAlpha="0.72" />
+</vector>

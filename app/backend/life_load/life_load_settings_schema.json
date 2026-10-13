@@ -1,0 +1,63 @@
+{
+  "schema_version": "life_load_settings_contract_v1",
+  "sections": [
+    {
+      "key": "garmin",
+      "title": "Garmin",
+      "description": "Optional live Garmin import. Password is write-only and redacted after save.",
+      "fields": [
+        {"key": "enabled", "type": "boolean", "default": false},
+        {"key": "email", "type": "string", "default": ""},
+        {"key": "password", "type": "secret", "write_only": true},
+        {"key": "auto_import", "type": "boolean", "default": false},
+        {"key": "auto_import_days", "type": "integer", "default": 3, "min": 1, "max": 14}
+      ]
+    },
+    {
+      "key": "daily_flow",
+      "title": "Daily flow",
+      "description": "Controls the daily closeout defaults in thin clients.",
+      "fields": [
+        {"key": "default_date", "type": "enum", "values": ["yesterday", "today"], "default": "yesterday"},
+        {"key": "entry_cache_days", "type": "integer", "default": 5, "min": 1, "max": 14},
+        {"key": "secondary_cards_collapsed", "type": "boolean", "default": true}
+      ]
+    },
+    {
+      "key": "reminder",
+      "title": "Reminder",
+      "description": "Optional local daily check-in reminder notification.",
+      "fields": [
+        {"key": "enabled", "type": "boolean", "default": false},
+        {"key": "hour", "type": "integer", "default": 21, "min": 0, "max": 23},
+        {"key": "minute", "type": "integer", "default": 30, "min": 0, "max": 59}
+      ]
+    },
+    {
+      "key": "formula",
+      "title": "Formula toggles",
+      "description": "Runtime formula switches. These are persisted now and can be consumed by scoring in the next pass.",
+      "fields": [
+        {"key": "profile", "type": "enum", "values": ["balanced", "protective", "sports_light"], "default": "balanced"},
+        {"key": "profile_modifiers", "type": "string_array", "values": ["balanced", "protective", "sports_light"], "default": []},
+        {"key": "include_training_trend_brake", "type": "boolean", "default": true},
+        {"key": "include_garmin_recovery", "type": "boolean", "default": true},
+        {"key": "include_relationship_stress", "type": "boolean", "default": true},
+        {"key": "include_alone_home", "type": "boolean", "default": true},
+        {"key": "include_after_work_decompression", "type": "boolean", "default": true},
+        {"key": "include_project_overrun", "type": "boolean", "default": true},
+        {"key": "include_late_phone", "type": "boolean", "default": true},
+        {"key": "include_home_office", "type": "boolean", "default": true}
+      ]
+    },
+    {
+      "key": "debug",
+      "title": "Safety and debug",
+      "description": "Developer-facing switches for troubleshooting without changing the canonical diary model.",
+      "fields": [
+        {"key": "show_formula_button", "type": "boolean", "default": true},
+        {"key": "show_garmin_import_buttons", "type": "boolean", "default": true}
+      ]
+    }
+  ]
+}

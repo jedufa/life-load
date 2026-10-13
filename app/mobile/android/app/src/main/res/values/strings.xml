@@ -1,0 +1,1172 @@
+<resources>
+  <string name="app_name">Life Load</string>
+
+  <!-- Navigation -->
+  <string name="nav_guidance">Guidance</string>
+  <string name="nav_check_in">Check-in</string>
+  <string name="nav_settings">Settings</string>
+
+  <!-- Common -->
+  <string name="close">Close</string>
+  <string name="not_sure">Not sure</string>
+  <string name="unknown">Not sure</string>
+  <string name="operator_unknown">Unknown</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="none">None</string>
+  <string name="social">Social</string>
+  <string name="at_home">At home</string>
+  <string name="low">Low</string>
+  <string name="normal">Normal</string>
+  <string name="heavy">Heavy</string>
+  <string name="high">High</string>
+  <string name="extreme">Extreme</string>
+  <string name="home">Home</string>
+  <string name="walk">Walk</string>
+  <string name="bike">Bike</string>
+  <string name="run">Run</string>
+  <string name="crossfit">CrossFit</string>
+  <string name="rehab">Rehab</string>
+  <string name="meditation">Meditation</string>
+  <string name="other">Other</string>
+  <string name="custom">Custom</string>
+  <string name="na">N/A</string>
+  <string name="cancel">Cancel</string>
+  <string name="refresh">Refresh</string>
+  <string name="account">Account</string>
+  <string name="signed_in_as">Signed in as</string>
+  <string name="signed_in">Signed in</string>
+  <string name="alpha_backend">Alpha backend</string>
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="sign_in">Sign in</string>
+  <string name="signing_in">Signing in...</string>
+  <string name="create_account">Create account</string>
+  <string name="auth_medical_disclaimer_acknowledgement">I understand Life Load is a general wellness and self-tracking tool. It does not provide medical advice, diagnosis, treatment, or emergency support, and it is not intended to diagnose, treat, cure, prevent, or mitigate disease. I will consult a qualified healthcare professional for medical concerns.</string>
+  <string name="show_password">Show password</string>
+  <string name="hide_password">Hide password</string>
+  <string name="sign_out">Sign out</string>
+  <string name="life_load">Life Load</string>
+  <string name="previous_day">Previous day</string>
+  <string name="next_day">Next day</string>
+  <string name="today">Today</string>
+  <string name="yesterday">Yesterday</string>
+  <string name="yesterday_short">Yest.</string>
+  <string name="life_load_help_content_description">How Life Load works</string>
+  <string name="life_load_help_title">How Life Load works</string>
+  <string name="compass_plus_overflow_content_description">Open Life Load menu</string>
+  <string name="compass_plus_privacy_backup">Backup &amp; restore</string>
+  <string name="life_load_help_why_title">Why this exists</string>
+  <string name="life_load_help_why_body">Life Load is not trying to label a day as good or bad. It helps you notice when sleep, stress, pain, food, work, family load, and evening habits start combining into a pattern that may need a smaller next step.</string>
+  <string name="life_load_help_formula_title">Why there is a formula</string>
+  <string name="life_load_help_formula_body">The formula keeps guidance consistent. It turns repeated signals into a simple state such as Stable, Watch, or Recovery priority. It also lowers guidance quality when important details are missing, so the app does not sound more certain than the data supports.</string>
+  <string name="life_load_help_combinations_title">Example combinations</string>
+  <string name="life_load_help_combinations_body">One late night may not matter much. Late phone use plus project overrun plus high stress can point toward a lighter evening. Strong recovery can offset some load, but repeated risk signals can still push the pattern upward. Missing pain, stress, or energy makes guidance less reliable.</string>
+  <string name="life_load_help_science_title">Science behind the approach</string>
+  <string name="life_load_help_science_body">The app uses ideas from behavior-change research: self-monitoring, feedback, small concrete next steps, and if-then planning. These methods work best when they help you choose a specific action rather than just showing numbers.</string>
+  <string name="life_load_help_limits_title">What this is not</string>
+  <string name="life_load_help_limits_body">Life Load is not a diagnosis, treatment plan, or emergency tool. It is a personal pattern and recovery-planning aid. If something feels medically urgent or unsafe, use appropriate medical or emergency support.</string>
+
+  <!-- Guidance hero -->
+  <string name="compass_guidance_headline_high">Your recovery needs priority now</string>
+  <string name="compass_guidance_headline_medium">Your recent pattern needs watching</string>
+  <string name="compass_guidance_headline_stable">Your recent pattern looks stable</string>
+  <string name="compass_guidance_headline_unknown">Not enough data yet</string>
+
+  <string name="compass_guidance_body_high">Your recent pattern suggests taking the next 48 hours easier.</string>
+  <string name="compass_guidance_body_medium">Keep the next day or two simple.</string>
+  <string name="compass_guidance_body_stable">Keep the same rhythm and protect the habits that are working.</string>
+  <string name="compass_guidance_body_unknown">Add a few check-ins to make guidance more reliable.</string>
+
+  <string name="compass_guidance_action_high">Sleep first. No late projects. Keep evenings simple.</string>
+  <string name="compass_guidance_action_medium">Prioritize sleep and avoid extra commitments.</string>
+  <string name="compass_guidance_action_stable">Keep the same rhythm.</string>
+  <string name="compass_guidance_action_unknown">Add today’s check-in when ready.</string>
+  <string name="compass_guidance_headline_need_checkins">Not enough data yet: %1$d of %2$d check-ins</string>
+  <string name="compass_guidance_headline_improving_high">Recovery is improving, but risk remains high</string>
+  <string name="compass_guidance_recovery_protected">Keep recovery protected today</string>
+  <string name="compass_guidance_pattern_watching">Your pattern needs watching</string>
+  <string name="compass_guidance_need_recent_checkins">Need %1$d recent check-ins</string>
+  <string name="compass_guidance_complete_window">Complete %1$d-day view</string>
+  <string name="compass_guidance_saved_in_window">%1$d in %2$d days saved</string>
+  <string name="compass_guidance_requirement">%1$d of %2$d approved check-ins in the last %3$d days. Add %4$d more approved %5$s for guidance.</string>
+  <string name="compass_guidance_checkin_singular">check-in</string>
+  <string name="compass_guidance_checkin_plural">check-ins</string>
+  <string name="compass_guidance_recent_recovery_still_high">Recovery is improving, but risk remains high.</string>
+  <string name="compass_guidance_recent_signals_need_protection">Recent risk signals still need protection.</string>
+  <string name="compass_guidance_recovery_improving_line">Recovery is improving.</string>
+  <string name="compass_guidance_earlier_week_still_counts">Some earlier-week signals still affect the pattern.</string>
+  <string name="compass_guidance_waits_for_data">Life Load waits for 3 approved check-ins in the recent window before showing a guidance state.</string>
+  <string name="compass_guidance_not_enough_to_change">There is not enough recent check-in data to lower or raise guidance yet.</string>
+  <string name="compass_guidance_improvement_protection">Recent improvement keeps this framed as protection, not emergency.</string>
+  <string name="compass_guidance_no_extra_severity">No extra severity is added unless current signals worsen.</string>
+  <string name="compass_guidance_no_severe_signal">No severe current-state signal is forcing a stronger warning.</string>
+  <string name="compass_guidance_recent_recovery_priority">Recent signals still point toward recovery priority.</string>
+  <string name="compass_guidance_steady_days_needed">Earlier-week signals still count until more steady days accumulate.</string>
+  <string name="compass_guidance_no_stronger_warning">The current pattern does not need a stronger recovery-priority warning.</string>
+  <string name="compass_guidance_keep_sleep_protected">Keep sleep protected and avoid late project spillover today.</string>
+  <string name="compass_guidance_stable_evenings_ease">A few stable evenings would lower the recovery priority.</string>
+  <string name="compass_guidance_keep_recovery_margin">Keep the current recovery margin.</string>
+  <string name="compass_guidance_more_steady_days">More saved steady days will make guidance calmer.</string>
+  <string name="compass_guidance_reason_active">Why active</string>
+  <string name="compass_guidance_reason_not_higher">Why not higher</string>
+  <string name="compass_guidance_reason_not_lower">Why not lower</string>
+  <string name="compass_guidance_reason_ease">What would ease it</string>
+  <string name="compass_guidance_reason_signals">Signals</string>
+  <string name="compass_guidance_relevant_dates_window">Relevant dates: current calculation window</string>
+  <string name="compass_guidance_relevant_dates">Relevant dates: %1$s</string>
+  <string name="compass_guidance_action_recovery">Keep recovery protected today.\nSleep first.\nNo late projects.</string>
+  <string name="compass_guidance_action_caution">The next day or two should stay simple. Prioritize sleep and avoid adding optional load.</string>
+  <string name="compass_guidance_action_keep_rhythm">Keep the same rhythm and protect the habits that are working.</string>
+
+  <!-- Risk and confidence -->
+  <string name="compass_risk_high">High risk</string>
+  <string name="compass_risk_caution">Caution</string>
+  <string name="compass_risk_stable">Stable</string>
+  <string name="compass_risk_unknown">Not enough data</string>
+  <string name="compass_confidence">Guidance quality: %1$s</string>
+  <string name="guidance_quality">Guidance quality: %1$s</string>
+  <string name="guidance_quality_help">Guidance quality reflects how complete and recent your check-ins are.</string>
+  <string name="confidence_high">High confidence</string>
+  <string name="confidence_medium">Medium confidence</string>
+  <string name="confidence_partial">Partial confidence</string>
+  <string name="confidence_pending">Guidance pending</string>
+  <string name="confidence_not_saved">Not saved</string>
+  <string name="confidence_quality_high">high</string>
+  <string name="confidence_quality_medium">medium</string>
+  <string name="confidence_quality_partial">partial</string>
+  <string name="confidence_quality_not_enough">not enough data</string>
+
+  <!-- Data quality / coverage -->
+  <string name="compass_data_quality_complete">Complete 7-day view</string>
+  <string name="compass_data_quality_partial">%1$d of 7 days saved</string>
+  <string name="compass_data_quality_entries">%1$d check-ins available</string>
+  <string name="compass_data_quality_empty">No saved check-ins yet</string>
+  <string name="compass_no_drafts_conflicts">No unfinished check-ins or review items.</string>
+  <string name="compass_drafts_conflicts">%1$d unfinished · %2$s</string>
+  <string name="compass_none_need_review">None need review</string>
+  <string name="compass_review_needed_count">%1$d needing review</string>
+  <string name="compass_data_availability">Data coverage</string>
+  <string name="compass_data_available_entries">%1$d check-ins available</string>
+  <string name="compass_conflicts_count">%1$s</string>
+  <string name="compass_focus_window_complete">Complete 7-day view</string>
+  <string name="compass_days_saved">%1$d of 7 days saved</string>
+  <string name="compass_entries_available">%1$d check-ins available</string>
+  <string name="compass_no_saved_checkins">No saved check-ins yet</string>
+
+  <!-- Operator-only / technical state -->
+  <string name="compass_week_state">Week state: %1$s · %2$s to %3$s</string>
+  <string name="compass_backend_sync">Backend %1$s · sync %2$s</string>
+
+  <!-- Guidance details -->
+  <string name="compass_main_drivers">Why this guidance?</string>
+  <string name="compass_no_weekly_drivers">No strong weekly drivers yet.</string>
+  <string name="project_spillover_driver">Projects cut into recovery: %1$d of 7 days</string>
+  <string name="late_phone_driver">Late phone: %1$d of 7 days</string>
+  <string name="late_phone_driver_recent">Late phone appeared recently.</string>
+  <string name="late_phone_driver_fading">Late phone happened earlier this week, but recent evenings improved.</string>
+  <string name="late_phone_driver_window">Late phone appeared in the recent window.</string>
+  <string name="late_phone_driver_operator">Late phone: %1$d of 7 days · weighted %2$.2f</string>
+  <string name="project_spillover_driver_recent">Project spillover appeared recently.</string>
+  <string name="project_spillover_driver_fading">Project spillover happened earlier this week, but recent days look better.</string>
+  <string name="project_spillover_driver_window">Project spillover appeared in the recent window.</string>
+  <string name="project_spillover_driver_operator">Project spillover: %1$d of 7 days · weighted %2$.2f</string>
+  <string name="recent_recovery_improving">Recent days look better than earlier this week.</string>
+  <string name="recent_recovery_caution_easing">Caution is easing. Earlier-week spillover still affects the weekly pattern.</string>
+
+  <!-- Guidance rationale / retention -->
+  <string name="science_note_patterns_title">Why this matters</string>
+  <string name="science_note_patterns_short">Small signals can add up. Life Load watches for repeated patterns so you can adjust before things feel harder to manage.</string>
+  <string name="science_note_tracking_short">Tracking is not about judgment. It helps connect what happened, what changed, and what may help next.</string>
+  <string name="science_note_triggers_short">Triggers are easier to work with when they are visible early.</string>
+  <string name="science_note_missing_data_short">More complete check-ins make guidance more reliable.</string>
+  <string name="how_life_load_thinks">How Life Load thinks</string>
+  <string name="patterns_not_single_days">Patterns, not single bad days</string>
+  <string name="patterns_not_single_days_body">Life Load looks for repeated signals over recent days. One difficult day is not the whole story.</string>
+  <string name="small_signals_add_up">Small signals can add up</string>
+  <string name="small_signals_add_up_body">Sleep, stress, pain, food, and evening habits can combine. Life Load highlights patterns early so the next step can stay small.</string>
+  <string name="adjustment_not_judgment">Adjustment, not judgment</string>
+  <string name="adjustment_not_judgment_body">The goal is not to label a day as good or bad. The goal is to notice patterns and choose a useful next step.</string>
+  <string name="what_changed_recently">What changed recently?</string>
+  <string name="what_helped_before">What helped before?</string>
+  <string name="what_to_watch_next">What to watch next</string>
+  <string name="if_you_do_one_thing">If you do one thing</string>
+  <string name="next_check_in">Next check-in</string>
+  <string name="what_to_watch_next_body_high">Tonight, focus on sleep and avoiding late projects. Add a check-in tomorrow to see whether risk is easing.</string>
+  <string name="what_to_watch_next_body_high_evening">Tonight, focus on sleep and avoiding late projects. Add a check-in tomorrow to see whether risk is easing.</string>
+  <string name="what_to_watch_next_body_high_generic">Keep the next day simple. Add a check-in tomorrow to see whether risk is easing.</string>
+  <string name="what_to_watch_next_body_caution">Keep the next day or two simple and watch whether recovery improves.</string>
+  <string name="what_to_watch_next_body_stable">Keep the same rhythm and check in again to keep the pattern visible.</string>
+  <string name="what_to_watch_next_body_empty">Add a few check-ins so the next pattern has enough context.</string>
+  <string name="if_you_do_one_thing_body_high">Protect sleep tonight. Everything else can stay simple.</string>
+  <string name="risk_help">Risk means your recent pattern is more likely to need a recovery-focused adjustment.</string>
+  <string name="compass_risk_help_title">About %1$s</string>
+  <string name="compass_risk_help_body">Life Load shows this state when recent check-ins, trend signals, or repeated patterns suggest a lighter recovery-focused period may help. The specific reasons are listed under “Why this guidance?”</string>
+
+  <!-- Visual recommendation states -->
+  <string name="recommendation_recovery_priority">Recovery priority</string>
+  <string name="recommendation_watch">Watch</string>
+  <string name="recommendation_stable">Stable</string>
+  <string name="recommendation_not_enough_data">Not enough data</string>
+  <string name="recommendation_recovery_improving">Recovery improving</string>
+  <string name="recommendation_load_building">Load building</string>
+  <string name="recommendation_evening_risk">Evening risk</string>
+
+  <!-- Progress markers -->
+  <string name="badges_title">Progress markers</string>
+  <string name="badge_back_again">Back Again</string>
+  <string name="badge_back_again_body">You came back. That counts.</string>
+  <string name="badge_pattern_spotter">Pattern Spotter</string>
+  <string name="badge_pattern_spotter_body">You made a recent pattern visible.</string>
+  <string name="badge_trigger_noticed">Trigger Noticed</string>
+  <string name="badge_trigger_noticed_body">One repeated signal is now visible.</string>
+  <string name="badge_simple_evening">Simple Evening</string>
+  <string name="badge_simple_evening_body">Evening risk is easier to work with when it is visible.</string>
+  <string name="badge_better_signal">Better Signal</string>
+  <string name="badge_better_signal_body">You added details that made guidance clearer.</string>
+  <string name="badge_no_reset">No Reset</string>
+  <string name="badge_no_reset_body">Progress is not erased by a hard period.</string>
+  <string name="badge_small_step">Small Step Taken</string>
+  <string name="badge_small_step_body">A small recovery step is still a step.</string>
+
+  <!-- Trend -->
+  <string name="compass_trend">Trend</string>
+  <string name="compass_recent_path">Recent path</string>
+  <string name="compass_recent_path_empty">Add a few more check-ins to make the pattern clearer.</string>
+  <string name="compass_recent_path_placeholder">Not enough data to show a path yet</string>
+  <string name="compass_recent_path_accessibility_empty">Recent path: not enough data to show a path yet</string>
+  <string name="compass_recent_path_recovery_priority">The last few days are still pointing toward recovery priority.</string>
+  <string name="compass_recent_path_easing">Your recent pattern is easing.</string>
+  <string name="compass_recent_path_steady">The last few days look steady.</string>
+  <string name="compass_recent_path_help">This curve shows how your recent pattern has been moving. Higher means more recovery priority. Lower means steadier balance.</string>
+  <string name="compass_recent_path_balance_line">Steady line</string>
+  <string name="compass_recent_path_risk_line">Risk starts</string>
+  <string name="compass_recent_path_through">Through %1$s</string>
+  <string name="compass_recent_path_state_recovery">Recovery priority</string>
+  <string name="compass_recent_path_state_watch">Watch</string>
+  <string name="compass_recent_path_state_stable">Stable</string>
+  <string name="compass_recent_risk_improving_active">Recovery is improving, but recent risk signals still need watching.\n%1$s</string>
+  <string name="compass_recent_risk_improving">Recovery is improving.\nEarlier-week signals still affect the weekly pattern.</string>
+  <string name="compass_recent_risk_active">Recent risk signals are still active.\n%1$s</string>
+  <string name="compass_recent_signal_late_phone_project">Late phone and project spillover appeared recently.</string>
+  <string name="compass_recent_signal_late_phone">Late phone appeared recently.</string>
+  <string name="compass_recent_signal_project">Project spillover appeared recently.</string>
+  <string name="compass_recent_signal_recovery_margin">Keep the recovery margin.</string>
+  <string name="compass_trend_empty">Trends appear after a few saved check-ins.</string>
+  <string name="compass_trend_explanation_empty">Guidance gets more reliable after a few saved check-ins.</string>
+  <string name="compass_trend_recovery_strong_risk_high">Recovery is strong, but risk remains high.</string>
+  <string name="compass_trend_recovery_risk_ok">Recovery and risk look in balance.</string>
+  <string name="compass_trend_explanation_low">Recent risk signals look manageable.</string>
+  <string name="compass_trend_explanation_high">Recent risk signals still outweigh recovery.</string>
+
+  <!-- Optional metric descriptions -->
+  <string name="metric_load_description">How demanding recent days have been.</string>
+  <string name="metric_recovery_description">Sleep, decompression, and recovery-supporting signals.</string>
+  <string name="metric_recovery_margin_description">How much recovery is available compared with recent load.</string>
+  <string name="metric_risk_description">How likely the current pattern is to need a lighter recovery-focused period.</string>
+
+  <!-- Recent check-ins -->
+  <string name="compass_recent_saved_checkins">Recent saved check-ins</string>
+  <string name="compass_save_checkins_for_guidance">Add daily check-ins to build better guidance.</string>
+  <string name="compass_no_short_summary">No summary yet.</string>
+  <string name="recent_partial_missing">Saved · missing details</string>
+  <string name="recent_saved_no_summary">Saved check-in · no summary yet</string>
+  <string name="recent_recovery_step">Recovery step recommended</string>
+
+  <!-- Check-in state -->
+  <string name="compass_last_saved">Last saved %1$s</string>
+  <string name="compass_next_helpful_step">Next helpful step:</string>
+  <string name="compass_missing_details">Missing details: %1$s</string>
+  <string name="compass_no_major_fields_missing">No major fields missing.</string>
+  <string name="compass_why_this_suggestion">Why this suggestion?</string>
+  <string name="compass_why_this_conclusion">Why this guidance?</string>
+  <string name="compass_tap_guidance_for_why">Tap highlighted guidance to see what contributed.</string>
+  <string name="compass_no_guidance_explanation">No explanation is available yet.</string>
+  <string name="compass_add_details_for_guidance">Add more check-in details to improve guidance.</string>
+  <string name="daily_status_conflict">Conflict</string>
+  <string name="daily_status_conflict_detail">Local and server data need review.</string>
+  <string name="daily_status_pending_sync">Pending sync</string>
+  <string name="daily_status_pending_sync_detail">Saved locally. Sync will retry.</string>
+  <string name="daily_status_saved">Saved</string>
+  <string name="daily_status_saved_detail">Check-in saved.</string>
+  <string name="daily_status_saved_pending_guidance">Saved locally</string>
+  <string name="daily_status_saved_pending_guidance_detail">Your check-in is saved, but guidance is not available until evaluation completes.</string>
+  <string name="daily_status_unsaved">Unsaved changes</string>
+  <string name="daily_status_unsaved_detail">Your latest edits are stored locally. Save the check-in when ready.</string>
+  <string name="daily_status_draft">Draft</string>
+  <string name="daily_status_draft_detail">Check in when ready.</string>
+  <string name="daily_status_offline">Offline</string>
+  <string name="daily_status_offline_detail">Local editing still works.</string>
+  <string name="daily_status_ready">Ready</string>
+  <string name="daily_status_ready_detail">No saved check-in yet.</string>
+  <string name="daily_day_today">Today</string>
+  <string name="daily_day_this_day">This day</string>
+  <string name="daily_headline_checkin_ready">Check in when ready.</string>
+  <string name="daily_headline_unsaved">Your latest check-in edit is unsaved.</string>
+  <string name="daily_headline_tonight_simple">Keep tonight simple.</string>
+  <string name="daily_headline_evening_simple">Keep the evening simple.</string>
+  <string name="daily_headline_steady">Keep steady.</string>
+  <string name="daily_headline_recovery_48h">Take the next 48 hours easier.</string>
+  <string name="daily_headline_saved">Today is saved.</string>
+  <string name="daily_headline_saved_pending">Saved locally; guidance is pending.</string>
+  <string name="daily_meaning_future">This check-in is for a future day.</string>
+  <string name="daily_meaning_missed">This day was missed.</string>
+  <string name="daily_meaning_open">The check-in is still open.</string>
+  <string name="daily_meaning_unsaved">This check-in has unsaved changes.</string>
+  <string name="daily_meaning_saved_pending">This check-in is saved locally; guidance will appear after evaluation.</string>
+  <string name="daily_meaning_recovery">%1$s points toward recovery priority.</string>
+  <string name="daily_meaning_more_load">%1$s carried more load.</string>
+  <string name="daily_meaning_mostly_steady">%1$s looks mostly steady.</string>
+  <string name="daily_meaning_steady">%1$s looks steady.</string>
+  <string name="daily_saved_missing">%1$s is saved, but some details are still missing.</string>
+  <string name="daily_saved_core">Your core check-in is saved.</string>
+  <string name="daily_saved_pending">Your check-in is saved locally; guidance is still pending.</string>
+  <string name="daily_unsaved_saved_status">Your latest changes are stored locally; save when ready.</string>
+  <string name="daily_saved_future">Future check-ins are not ready to save yet.</string>
+  <string name="daily_saved_partial">A partial check-in is saved locally.</string>
+  <string name="daily_saved_ready">Save the basics when ready.</string>
+  <string name="daily_helpful_future">Wait until this day arrives.</string>
+  <string name="daily_helpful_missed">• Add what you remember.\n• Approximate is fine.\n• Skip what you do not know.</string>
+  <string name="daily_helpful_unsaved">Your latest edit is stored locally. Save when the check-in looks right.</string>
+  <string name="daily_helpful_missing">• Save the basics first.\n• Add details only if they matter today.</string>
+  <string name="daily_helpful_save_basics">• Save the basics first.\n• Details can stay optional.</string>
+  <string name="daily_helpful_partial">• Add missing details if useful.\n• Treat guidance as partial.\n• Keep the core check-in saved.</string>
+  <string name="daily_helpful_recovery">• Sleep first.\n• Reduce optional load.\n• Keep the next 48 hours simple.</string>
+  <string name="daily_helpful_caution">• Keep tonight simple.\n• Avoid late projects.\n• Protect sleep.</string>
+  <string name="daily_helpful_default">• Protect sleep.\n• Keep food simple.\n• Repeat what worked.</string>
+  <string name="daily_next_action_save_when_ready">Save today’s check-in when the useful truth looks right.</string>
+  <string name="daily_next_action_add_missing">Add %1$s for a more reliable score.</string>
+  <string name="daily_next_action_saved_confidence">Saved with %1$s. Keep tonight simple.</string>
+  <string name="compass_risk_level_value">Risk level: %1$s</string>
+  <string name="compass_risk_level_mode">Risk level: %1$s · mode: %2$s</string>
+  <string name="compass_set_value">Choose a value</string>
+  <string name="compass_choose_number">Choose a number</string>
+  <string name="compass_mode">Mode</string>
+
+  <!-- Help / accessibility -->
+  <string name="compass_help_for">About %1$s</string>
+  <string name="compass_yes_meaning">Yes: %1$s</string>
+  <string name="compass_no_meaning">No: %1$s</string>
+  <string name="compass_not_sure_meaning">Not sure: %1$s</string>
+  <string name="compass_internal_field">Internal field: %1$s</string>
+  <string name="compass_decrease">Decrease %1$s</string>
+  <string name="compass_increase">Increase %1$s</string>
+  <string name="daily_reason_load_threshold">The daily load score crossed the caution threshold.</string>
+  <string name="daily_reason_sleep_late">Sleep was not on time.</string>
+  <string name="daily_reason_food_off_track">Food was marked off track.</string>
+  <string name="daily_reason_eating_episode">Eating episode flagged recently.</string>
+  <string name="daily_reason_alcohol_home">Alcohol at home was logged.</string>
+  <string name="daily_reason_alcohol_social">Social alcohol was logged.</string>
+  <string name="daily_reason_alcohol_logged">Alcohol exposure was logged.</string>
+  <string name="daily_reason_late_phone">Phone after 21:00 was logged.</string>
+  <string name="daily_reason_project_overrun">A project ran into recovery time.</string>
+  <string name="daily_reason_shutdown_missed">The day did not have a clear shutdown.</string>
+  <string name="daily_reason_decompression_missed">After-work decompression was missed.</string>
+  <string name="daily_reason_stress_high">Stress signal was high.</string>
+  <string name="daily_reason_energy_low">Energy was low.</string>
+  <string name="daily_reason_pain_high">Pain signal needs protection.</string>
+  <string name="daily_reason_migraine">Migraine signal was logged.</string>
+  <string name="daily_reason_work_heavy">Work intensity was high.</string>
+  <string name="daily_reason_family_stress">Home or relationship stress added load.</string>
+  <string name="daily_reason_garmin_short_sleep">Garmin sleep suggests extra recovery.</string>
+  <string name="daily_reason_recovery_slipping">Recovery habits are slipping.</string>
+  <string name="daily_reason_recent_risk_high">Recent pattern suggests higher risk.</string>
+  <string name="daily_reason_school_conflict">School-related conflict added load.</string>
+  <string name="daily_reason_training_load">Recent training load is elevated.</string>
+  <string name="daily_reason_hard_sessions">Multiple demanding sessions added load.</string>
+  <string name="daily_reason_evening_chain">Evening sequence needs support.</string>
+  <string name="daily_reason_emotional_load">Emotional load is high.</string>
+  <string name="daily_reason_alone_home">Alone-at-home risk context was present.</string>
+  <string name="daily_reason_missing_data">A few fields are still not sure.</string>
+
+  <!-- Quick check-in fields -->
+  <string name="field_sleep_label">Did you sleep on time?</string>
+  <string name="field_sleep_helper">Close enough to your intended bedtime.</string>
+
+  <string name="field_food_label">Did food stay on track?</string>
+  <string name="field_food_helper">Close enough to the way you intended to eat today.</string>
+
+  <string name="field_alcohol_label">Any alcohol today?</string>
+  <string name="field_alcohol_helper">Use “At home” for drinking outside a social setting.</string>
+
+  <string name="field_eating_episode_label">Any eating episode to flag?</string>
+  <string name="field_eating_episode_helper">Only mark this if it feels relevant for recovery or load.</string>
+
+  <string name="field_optional_diary_label">Optional diary note</string>
+  <string name="field_diary_label">Diary note</string>
+  <string name="field_diary_placeholder">Anything worth remembering about today?</string>
+
+  <!-- Movement -->
+  <string name="field_activity_type_label">What kind of movement?</string>
+  <string name="field_activity_type_helper">Pick the main movement signal for today.</string>
+  <string name="field_movement_minutes_label">Roughly how long?</string>
+  <string name="field_movement_minutes_helper">Approximate is fine.</string>
+
+  <!-- Evening / recovery -->
+  <string name="field_rehab_label">Did you do rehab or body maintenance?</string>
+  <string name="field_rehab_helper">Any planned body maintenance counts.</string>
+
+  <string name="field_decompression_label">Did you decompress after work?</string>
+  <string name="field_decompression_helper">A short transition before family or evening mode.</string>
+
+  <string name="field_shutdown_label">Did you intentionally end the day?</string>
+  <string name="field_shutdown_helper">A clear stop point for work, projects, or screens.</string>
+
+  <string name="field_phone_after_21_label">Non-essential phone after 21:00?</string>
+  <string name="field_phone_after_21_helper">Only count non-essential scrolling or browsing.</string>
+
+  <string name="field_project_overrun_label">Did a project run too late?</string>
+  <string name="field_project_overrun_helper">Personal or work project spilling into recovery time.</string>
+
+  <!-- Pain / symptoms -->
+  <string name="field_foot_pain_label">Foot pain today</string>
+  <string name="field_foot_pain_helper">0 = none · 10 = severe. 5+ means reduce impact or load.</string>
+
+  <string name="field_shoulder_pain_label">Shoulder pain today</string>
+  <string name="field_shoulder_pain_helper">0 = none · 10 = severe.</string>
+
+  <string name="field_migraine_label">Migraine signal today?</string>
+  <string name="field_migraine_helper">Any migraine warning or active migraine signal.</string>
+
+  <string name="field_other_symptoms_label">Other symptoms</string>
+  <string name="field_other_symptoms_placeholder">Optional note</string>
+
+  <!-- Mood / stress / energy -->
+  <string name="field_mood_label">How was your mood?</string>
+  <string name="field_mood_helper">0 = very low · 10 = very good</string>
+
+  <string name="field_stress_label">How stressed did you feel?</string>
+  <string name="field_stress_helper">0 = calm · 10 = extreme</string>
+
+  <string name="field_energy_label">How much energy did you have?</string>
+  <string name="field_energy_helper">0 = empty · 10 = strong</string>
+
+  <string name="field_coffee_label">How many coffees?</string>
+  <string name="field_coffee_helper">Approximate is fine.</string>
+
+  <!-- Work / family -->
+  <string name="field_work_intensity_label">How intense was work?</string>
+  <string name="field_home_office_label">Did you work from home?</string>
+  <string name="field_family_stress_label">Home/family stress level</string>
+  <string name="field_relationship_tension_label">How many relationship tension moments?</string>
+  <string name="field_relationship_tension_helper">Small or large moments that affected your load.</string>
+  <string name="field_alone_home_label">Were you alone at home for a meaningful stretch?</string>
+  <string name="field_school_conflict_label">Any conflict about school or homework?</string>
+  <string name="field_chores_conflict_label">Any conflict about chores?</string>
+  <string name="field_homework_label">Homework handled?</string>
+  <string name="weekend_context_summary">Weekend context optional</string>
+  <string name="weekend_context_optional">Weekend: work, school, and homework details are optional. N/A is neutral, not a recovery signal.</string>
+
+  <!-- Compass sections -->
+  <string name="compass_quick_checkin">Quick check-in</string>
+  <string name="compass_quick_checkin_helper">Save the basics first. Add details only if they matter today.</string>
+  <string name="compass_core">Core</string>
+  <string name="compass_core_review_hint">Review only the important signals, correct what would change today, then save the check-in.</string>
+  <string name="compass_diary">Diary</string>
+  <string name="compass_detailed_signals">Detailed signals</string>
+  <string name="compass_detailed_signals_helper">Add only what feels relevant today.</string>
+  <string name="compass_movement">Movement</string>
+  <string name="compass_recovery_evening">Recovery / Evening</string>
+  <string name="compass_evening_risk">Evening risk</string>
+  <string name="compass_pain">Pain / Symptoms</string>
+  <string name="compass_mood_stress">Mood / Stress / Energy</string>
+  <string name="compass_work_family">Work / Family</string>
+  <string name="compass_tags">Tags / Notes</string>
+  <string name="compass_tags_label">Tags</string>
+  <string name="compass_guidance_empty_title">Guidance</string>
+  <string name="compass_guidance_empty_body">Guidance appears after saved daily check-ins.</string>
+  <string name="compass_guidance_needs_review">Guidance needs review</string>
+  <string name="compass_view_guidance">View guidance</string>
+  <string name="compass_guidance_scoring_button">Guidance &amp; scoring</string>
+  <string name="compass_open_navigation">Open navigation</string>
+  <string name="compass_daily_prompt_today">Describe today: sleep, food, alcohol, activity, pain, stress, evening behavior.</string>
+  <string name="compass_daily_prompt_yesterday">Describe yesterday: sleep, food, alcohol, activity, pain, stress, evening behavior.</string>
+  <string name="compass_daily_prompt_selected">Describe the selected day: sleep, food, alcohol, activity, pain, stress, evening behavior.</string>
+  <string name="compass_daily_prompt_this_day">Describe this day: sleep, food, alcohol, activity, pain, stress, evening behavior.</string>
+  <string name="compass_approval_next">Check-in saved. Next: %1$s</string>
+  <string name="compass_approval_saved">Check-in saved. Continue with the next normal step.</string>
+  <string name="compass_approval_draft">Draft saved locally. Save the check-in when today’s useful truth looks right.</string>
+  <string name="compass_approval_not_saved">Check-in not saved yet.</string>
+  <string name="compass_target_pain">5+ means reduce impact/load.</string>
+  <string name="compass_target_coffee">Coffees during the day, 0-8. Captured for future trend analysis.</string>
+  <string name="compass_loading_day_dashboard">Loading day and dashboard...</string>
+  <string name="compass_ai_analyzing_diary_short">AI analyzing diary...</string>
+  <string name="compass_syncing">Syncing...</string>
+  <string name="compass_unsaved_draft_exists">Unsaved draft exists</string>
+
+  <!-- Runtime status / messages -->
+  <string name="vm_local_debug_not_loaded">Not loaded</string>
+  <string name="vm_settings_changed_local">Settings changed locally</string>
+  <string name="vm_settings_saved">Settings saved.</string>
+  <string name="vm_settings_save_failed">Settings could not be saved.</string>
+  <string name="vm_profile_changed_hidden_preserved">Profile changed. Check-in fields updated.</string>
+  <string name="vm_optional_pack_enabled">Optional pack enabled.</string>
+  <string name="vm_optional_pack_disabled">Optional pack disabled.</string>
+  <string name="vm_profile_defaults_restored">Profile defaults restored. History is preserved.</string>
+  <string name="vm_profile_setup_ready">Profile setup ready.</string>
+  <string name="vm_future_days_blank">Future days stay blank until they arrive.</string>
+  <string name="vm_garmin_refreshing_before_save">Refreshing Garmin before saving check-in...</string>
+  <string name="vm_garmin_import_skipped">Garmin import skipped: %1$s.</string>
+  <string name="vm_garmin_auto_import_off">Garmin auto-import is off.</string>
+  <string name="vm_checkin_saved_refreshing_guidance">Check-in saved; refreshing guidance...</string>
+  <string name="vm_checkin_saved_local_sync_pending">Check-in saved locally; sync pending.</string>
+  <string name="vm_checkin_saved_recalculated">Check-in saved and recalculated.</string>
+  <string name="vm_checkin_saved_dashboard_pending">Check-in saved; dashboard refresh pending.</string>
+  <string name="vm_diary_required_before_analysis">Diary text is required before analysis.</string>
+  <string name="vm_ai_extraction_attention">AI extraction needs attention; draft was preserved for retry.</string>
+  <string name="vm_ai_analyzed_model">AI analyzed the diary with %1$s.</string>
+  <string name="vm_diary_analyzed">Diary analyzed.</string>
+  <string name="vm_diary_analysis_attention">Diary analysis needs attention.</string>
+  <string name="vm_importing_garmin_days">Importing Garmin for %1$d days...</string>
+  <string name="vm_importing_garmin_selected_day">Importing Garmin for selected day...</string>
+  <string name="vm_garmin_import_attention">Garmin import needs attention.</string>
+  <string name="vm_redacted_diagnostics_loaded">Redacted diagnostics loaded.</string>
+  <string name="vm_local_diagnostics_failed">Local diagnostics failed: %1$s</string>
+  <string name="vm_importing_recent_history">Importing recent history...</string>
+  <string name="vm_imported_recent_history">Imported %1$d/%2$d day(s); %3$d failed.</string>
+  <string name="vm_recent_history_import_failed">Recent history import failed: %1$s</string>
+  <string name="vm_restoring_from_server">Restoring from server...</string>
+  <string name="vm_restored_from_server">Restored %1$d/%2$d day(s); %3$d failed.</string>
+  <string name="vm_restore_from_server_failed">Restore from server failed: %1$s</string>
+  <string name="vm_syncing_pending_local_changes">Syncing pending local changes...</string>
+  <string name="vm_synced_local_changes">Synced %1$d/%2$d; %3$d failed; %4$d conflict(s).</string>
+  <string name="vm_local_sync_failed">Local sync failed: %1$s</string>
+  <string name="vm_mirroring_redacted_diagnostics">Mirroring redacted diagnostics...</string>
+  <string name="vm_mirrored_redacted_diagnostics">Mirrored %1$d local row(s) to %2$s; %3$d pending.</string>
+  <string name="vm_debug_mirror_failed">Debug mirror failed: %1$s</string>
+  <string name="vm_exported_local_data">Exported %1$d row(s) to %2$s; %3$d pending.</string>
+  <string name="vm_exported_backup_file">Saved backup file with %1$d row(s); %2$d pending.</string>
+  <string name="vm_imported_backup_file">Imported backup file with %1$d row(s); %2$d pending.</string>
+  <string name="vm_local_diagnostics_refreshed_after_export">Local diagnostics refreshed after export.</string>
+  <string name="vm_export_failed">Export failed: %1$s</string>
+  <string name="vm_import_failed">Import failed: %1$s</string>
+  <string name="vm_local_data_deleted">Local data deleted.</string>
+  <string name="vm_local_data_deleted_rows_remain">Local data deleted; %1$d rows remain.</string>
+  <string name="vm_delete_failed">Delete failed: %1$s</string>
+  <string name="vm_profile_setup_failed">Profile setup failed: %1$s</string>
+  <string name="vm_local_diagnostics_unavailable">Local diagnostics are not available in this repository.</string>
+  <string name="vm_saved">Saved.</string>
+  <string name="vm_saved_local_sync_pending">Saved locally; sync pending.</string>
+  <string name="vm_cached_day_refreshing">Cached day shown; refreshing...</string>
+  <string name="vm_dashboard_load_failed">Could not load the dashboard.</string>
+  <string name="vm_dashboard_attention">Dashboard needs attention: %1$s</string>
+  <string name="vm_entry_load_failed">Could not load the entry.</string>
+  <string name="vm_cached_day_refresh_failed">Showing cached day; refresh failed.</string>
+  <string name="vm_garmin_data_fresh">Garmin data is fresh.</string>
+  <string name="vm_garmin_token_missing">Garmin token is not connected yet.</string>
+  <string name="vm_garmin_imported">Garmin imported: %1$d passive row(s), %2$d activity row(s) across %3$d day(s).</string>
+
+  <!-- Legacy / debug surface copy -->
+  <string name="legacy_loading_selected_day">Loading selected day</string>
+  <string name="legacy_refreshing_week_context">Refreshing week context</string>
+  <string name="legacy_structured_fields_disabled">Structured fields are disabled until this day is loaded.</string>
+  <string name="legacy_weekly_status_recalculating">Weekly status is recalculating in the background.</string>
+  <string name="legacy_backend_needs_attention">Backend needs attention</string>
+  <string name="legacy_backend_unavailable">Backend unavailable</string>
+  <string name="legacy_local_editing_queue">Daily editing is available locally. Check-in saving will queue on this device until sync is available.</string>
+  <string name="legacy_resume_from_day">Resume from this day</string>
+  <string name="legacy_skipped_day_copy">A skipped day does not need perfect backfill. Capture the useful truth, save the check-in, and continue.</string>
+  <string name="legacy_local_diagnostics">Local diagnostics</string>
+  <string name="legacy_debug_exports_redacted">Debug build only; exports are redacted by default.</string>
+  <string name="legacy_import_7d">Import 7d</string>
+  <string name="legacy_sync">Sync</string>
+  <string name="legacy_mirror">Mirror</string>
+  <string name="legacy_schema_summary">Schema %1$s · %2$s</string>
+  <string name="legacy_redaction_unknown">redaction unknown</string>
+  <string name="legacy_export_remove_local_data">Export or remove local app data.</string>
+  <string name="legacy_export">Export</string>
+  <string name="legacy_delete_local">Delete local</string>
+  <string name="legacy_delete_local_confirm_copy">Tap Confirm delete to remove local entries, pending outbox rows, and local export files.</string>
+  <string name="legacy_debug_ui_variant">Debug UI variant</string>
+  <string name="legacy_debug_ui_variant_helper">Switches the whole app renderer without changing Life Load data or scoring.</string>
+  <string name="legacy_variant">Variant</string>
+  <string name="legacy_checkin_saved">Check-in saved</string>
+  <string name="legacy_advanced">Advanced</string>
+  <string name="legacy_connected_data">Connected data</string>
+  <string name="legacy_connected_data_helper">Garmin import and check-in refresh behavior.</string>
+  <string name="legacy_garmin_active">Garmin active</string>
+  <string name="legacy_garmin_auto_import">Auto-import after saving check-in</string>
+  <string name="legacy_garmin_password_saved">Garmin password saved; enter to replace</string>
+  <string name="legacy_save_garmin">Save Garmin</string>
+  <string name="legacy_checkin_flow">Check-in flow</string>
+  <string name="legacy_settings_formula_helper">Check-in flow, guidance and scoring, and display preferences.</string>
+  <string name="legacy_background_cache">Background cache</string>
+  <string name="legacy_training_trend_brake">Training trend brake</string>
+  <string name="legacy_garmin_recovery">Garmin recovery</string>
+  <string name="legacy_relationship_stress">Relationship stress</string>
+  <string name="legacy_alone_at_home">Alone at home</string>
+  <string name="legacy_after_work_decompression">After-work decompression</string>
+  <string name="legacy_project_overrun">Project overrun</string>
+  <string name="legacy_late_phone">Late phone</string>
+  <string name="legacy_home_office">Home office</string>
+  <string name="legacy_display">Display</string>
+  <string name="legacy_show_guidance_scoring_button">Show guidance &amp; scoring button</string>
+  <string name="legacy_show_garmin_import_buttons">Show Garmin import buttons</string>
+  <string name="legacy_last_days_next_48h">Last days -> next 48h</string>
+  <string name="legacy_no_drift_guidance">No drift guidance yet.</string>
+  <string name="legacy_saved_checkins">Saved check-ins</string>
+  <string name="legacy_load">Load</string>
+  <string name="legacy_sleep">Sleep</string>
+  <string name="legacy_food">Food</string>
+  <string name="legacy_recovery_margin">Recovery margin</string>
+  <string name="legacy_risk_level">Risk level</string>
+  <string name="legacy_weight">Weight</string>
+  <string name="legacy_weight_14d">Weight 14d</string>
+  <string name="legacy_weight_age">Weight age</string>
+  <string name="legacy_days_old">%1$s days</string>
+  <string name="legacy_late_phone_label">Late phone</string>
+  <string name="legacy_project_label">Project</string>
+  <string name="legacy_signals_prefix">Signals: %1$s</string>
+  <string name="legacy_no_strong_drift">No strong drift pattern detected.</string>
+  <string name="legacy_trend_features_after_checkins">Trend features appear once saved check-ins exist.</string>
+  <string name="legacy_recent_saved_checkins">Recent saved check-ins</string>
+  <string name="legacy_save_checkins_guidance">Save daily check-ins to build the guidance view.</string>
+  <string name="legacy_weekly_review">Weekly review</string>
+  <string name="legacy_saved_count_7">%1$d/7 saved</string>
+  <string name="legacy_highest_load">Highest load: %1$s</string>
+  <string name="legacy_one_correction">One correction: %1$s</string>
+  <string name="legacy_snapshot">Snapshot</string>
+  <string name="legacy_recent_load">Recent load</string>
+  <string name="legacy_recovery_base">Recovery base</string>
+  <string name="legacy_trend_curve">Trend curve</string>
+  <string name="legacy_trend_curve_helper">Recent load vs recovery base. The dotted line is today’s balance reference.</string>
+  <string name="legacy_save_two_checkins_curve">Save at least two check-ins to draw a curve.</string>
+  <string name="legacy_balance_line">Balance line</string>
+  <string name="legacy_system_status">System status</string>
+  <string name="legacy_system_status_line">Backend %1$s · local data %2$s · sync %3$s · analysis %4$s</string>
+  <string name="legacy_status_local_mode">Local mode</string>
+  <string name="legacy_status_local_mode_detail">Daily edits can be saved locally; sync waits for the backend.</string>
+  <string name="legacy_status_data_check">Data check</string>
+  <string name="legacy_status_data_check_detail">The selected day could not be backed by local or server data.</string>
+  <string name="legacy_status_sync_check">Sync check</string>
+  <string name="legacy_status_sync_check_detail">The latest save or sync needs attention.</string>
+  <string name="legacy_status_analysis_check">Analysis check</string>
+  <string name="legacy_status_analysis_check_detail">Diary analysis failed; manual fields and check-in saving remain available when the backend is online.</string>
+  <string name="legacy_status_saving">Saving</string>
+  <string name="legacy_status_saving_detail">The current entry is being saved.</string>
+  <string name="legacy_status_analyzing">Analyzing</string>
+  <string name="legacy_status_analyzing_detail">Diary analysis is running.</string>
+  <string name="legacy_status_server_off">Server off</string>
+  <string name="legacy_status_server_off_detail">Daily edits can continue locally; sync starts when the backend returns.</string>
+  <string name="legacy_status_ready">Ready</string>
+  <string name="legacy_status_ready_detail">No system issue is blocking the current workflow.</string>
+  <string name="legacy_ai_analyzing_diary">AI is analyzing the diary</string>
+  <string name="legacy_ai_analyzing_diary_detail">This can take up to 30 seconds. The diary text is already preserved.</string>
+  <string name="legacy_detected_by_ai">Detected by AI</string>
+  <string name="legacy_review_before_saving">Review before saving</string>
+  <string name="legacy_review_before_saving_detail">Only correct items that change today’s recommendation.</string>
+  <string name="legacy_no_recommendation_yet">No recommendation yet.</string>
+  <string name="legacy_zone">Zone</string>
+  <string name="legacy_next_prefix">Next: %1$s</string>
+  <string name="legacy_minimum_win">Minimum win: %1$s</string>
+  <string name="legacy_why_prefix">Why: %1$s</string>
+  <string name="legacy_sleep_timing">Sleep timing</string>
+  <string name="legacy_food_on_track">Food on track</string>
+  <string name="legacy_foot">Foot</string>
+  <string name="legacy_alcohol">Alcohol</string>
+  <string name="legacy_binge">Eating episode</string>
+  <string name="legacy_week_summary">Week: Sleep %1$d/%2$d · Food %3$d/%4$d · Hard %5$d · Signals %6$d</string>
+  <string name="legacy_support_signals">Support signals: %1$s</string>
+  <string name="legacy_formula_intro">This is a conservative decision-support score for consistency, recovery, and anti-overreach. It is not a medical diagnosis.</string>
+  <string name="legacy_formula_current">Current: load %1$s · recovery %2$s · strain %3$s · training %4$s</string>
+  <string name="legacy_formula_training_context">Training context: ATL 7d %1$s · CTL 42d %2$s · ratio %3$s · ramp %4$s</string>
+  <string name="legacy_formula_current_support_signals">Current support signals: %1$s</string>
+  <string name="legacy_formula_section_life_load_title">Life load</string>
+  <string name="legacy_formula_section_life_load_body">Life load = strain + training load. Recovery is shown separately so a hard day can still be acceptable if recovery is strong enough.</string>
+  <string name="legacy_formula_section_training_title">Training</string>
+  <string name="legacy_formula_section_training_body">Manual activity, saved activity rows, and Garmin activities feed the same duration-sensitive rollup. Bike commute is lighter than sport biking; runs and CrossFit count more than both. Matching manual/Garmin activity rows are deduplicated.</string>
+  <string name="legacy_formula_section_atl_ctl_title">ATL / CTL</string>
+  <string name="legacy_formula_section_atl_ctl_body">ATL is a 7-day activity load and CTL is a 42-day activity base. Big training from a low base, or acute load far above chronic load, adds strain support signals.</string>
+  <string name="legacy_formula_section_strain_title">Strain</string>
+  <string name="legacy_formula_section_strain_body">Stress, pain, missed sleep, missed after-work decompression, evening sequence support, relationship stress, being alone at home, late phone, project overrun, heavy work, family stress, alcohol exposure, eating episodes, migraine signals, Garmin high stress, and short sleep add strain.</string>
+  <string name="legacy_formula_section_recovery_title">Recovery</string>
+  <string name="legacy_formula_section_recovery_body">Sleep on time, clean nutrition, energy, mood, shutdown, decompression, an after-work reset, rehab, walks, and reasonable steps add recovery. Garmin sleep helps when manual sleep is unknown.</string>
+  <string name="legacy_formula_section_hard_signals_title">Hard support signals</string>
+  <string name="legacy_formula_section_hard_signals_body">Alcohol at home, eating episodes, migraine signals, and pain flares override optimism. The response should prioritize recovery, not punishment training.</string>
+  <string name="legacy_interpretation">Interpretation</string>
+  <string name="legacy_detected_summary">Detected: %1$s</string>
+  <string name="legacy_no_extracted_summary">No extracted summary yet.</string>
+  <string name="legacy_status_value">Status: %1$s</string>
+  <string name="legacy_this_week_summary">This week: Sleep %1$d/%2$d · Nutrition %3$d/%4$d · Hard sessions %5$d · Support signals %6$d</string>
+  <string name="legacy_show">Show</string>
+  <string name="legacy_hide">Hide</string>
+  <string name="compass_movement_summary">Movement: %1$s</string>
+  <string name="compass_evening_risk_summary">Evening risk: %1$s</string>
+  <string name="compass_mood_stress_summary">Mood / stress: %1$s</string>
+
+  <string name="compass_open_details">Open details</string>
+  <string name="compass_add_details">Add details</string>
+  <string name="compass_add_missing_details">Add details if useful</string>
+  <string name="compass_save_today_checkin">Save today’s check-in</string>
+  <string name="compass_update_checkin">Update check-in</string>
+  <string name="compass_save_checkin">Save check-in</string>
+  <string name="copy_checkin_content_description">Copy check-in</string>
+  <string name="paste_checkin_content_description">Paste check-in</string>
+
+  <string name="compass_analyze_diary">Analyze diary</string>
+  <string name="compass_analyzing">Analyzing…</string>
+  <string name="compass_edit_diary">Edit diary</string>
+  <string name="compass_no_diary_note">No diary note.</string>
+  <string name="compass_no_tags">No tags</string>
+
+  <!-- Movement options -->
+  <string name="option_walk">Walk</string>
+  <string name="option_bike">Bike</string>
+  <string name="option_run">Run</string>
+  <string name="option_crossfit">CrossFit</string>
+  <string name="option_rehab">Rehab</string>
+  <string name="option_meditation">Meditation</string>
+  <string name="option_other">Other</string>
+
+  <!-- Interface / settings -->
+  <string name="gui_option">GUI option</string>
+  <string name="settings_interface">Interface</string>
+  <string name="settings_checkin_preferences">Check-in preferences</string>
+  <string name="settings_default_checkin_date">Default check-in date</string>
+  <string name="settings_entry_cache">Recent days loaded</string>
+  <string name="settings_entry_cache_explanation">This controls the phone’s local day cache. Life Load loads the selected check-in, then warms the previous days up to this limit so day navigation is faster and works better offline. It does not change guidance scoring.</string>
+  <string name="settings_explain">Explain</string>
+  <string name="settings_expand_section">Expand section</string>
+  <string name="settings_collapse_section">Collapse section</string>
+  <string name="settings_days">%1$s days</string>
+  <string name="settings_yesterday">Yesterday</string>
+  <string name="settings_today">Today</string>
+  <string name="settings_collapse_details">Collapse detailed check-in by default</string>
+  <string name="settings_collapse_details_helper">Show extra fields only when opened.</string>
+  <string name="settings_reminder">Reminder</string>
+  <string name="settings_daily_reminder">Daily check-in reminder</string>
+  <string name="settings_daily_reminder_helper">Life Load will show a local notification at the selected time.</string>
+  <string name="settings_reminder_time">Reminder time</string>
+  <string name="settings_reminder_morning">07:00</string>
+  <string name="settings_reminder_evening">21:30</string>
+  <string name="settings_reminder_custom">Custom</string>
+  <string name="settings_custom_reminder_time">Custom time</string>
+  <string name="settings_set_time">Set time</string>
+  <string name="settings_notification_permission_note">Android 13 and newer ask for notification permission when reminders are enabled.</string>
+  <string name="reminder_notification_title">Life Load check-in</string>
+  <string name="reminder_notification_body">Add today’s check-in when you have a minute.</string>
+  <string name="reminder_notification_channel_name">Daily check-in reminders</string>
+  <string name="reminder_notification_channel_description">Daily Life Load check-in reminders.</string>
+
+  <!-- Guidance / scoring settings -->
+  <string name="settings_guidance_scoring">Guidance &amp; scoring</string>
+  <string name="settings_guidance">Guidance</string>
+  <string name="settings_guidance_beta_copy">Life Load suggests Push, Maintain, Recover, Simplify, or Protect Sleep based on your active profile and recent check-ins.</string>
+  <string name="settings_profile">Profile</string>
+  <string name="settings_profile_future">Guidance modifiers</string>
+  <string name="settings_balanced">Balanced</string>
+  <string name="settings_protective">Protective</string>
+  <string name="settings_sports_light">Sports light</string>
+  <string name="settings_profile_balanced_helper">Balanced keeps the default guidance style.</string>
+  <string name="settings_profile_protective_helper">Protective can make caution arrive earlier once profile weighting is active.</string>
+  <string name="settings_profile_sports_light_helper">Sports light can keep training guidance gentler once profile weighting is active.</string>
+  <string name="settings_profile_future_helper">Choose any combination. These modifiers are saved now and will tune future scoring versions. The active controls are the factor switches shown in Detailed mode.</string>
+  <string name="settings_what_affects_guidance">What affects my guidance?</string>
+  <string name="settings_factor_on">on</string>
+  <string name="settings_factor_off">off</string>
+  <string name="settings_recovery">Recovery</string>
+  <string name="settings_evening_risk">Evening risk</string>
+  <string name="settings_stress">Stress</string>
+  <string name="settings_context">Context</string>
+  <string name="profile_effects">Profile effects</string>
+  <string name="profile_score_provenance">Base %1$.1f · adjusted %2$.1f · thresholds %3$d/%4$d</string>
+
+  <!-- Connected data / Garmin -->
+  <string name="settings_connected_data">Connected data</string>
+  <string name="settings_garmin_active">Use Garmin data</string>
+  <string name="settings_garmin_auto_import">Import Garmin data after saving</string>
+  <string name="settings_garmin_email">Garmin email</string>
+  <string name="settings_garmin_password">Garmin password</string>
+  <string name="settings_garmin_password_replace">Garmin password saved; enter to replace</string>
+  <string name="settings_auto_import_days">Days to import</string>
+  <string name="settings_save_garmin">Save Garmin settings</string>
+  <string name="settings_saving">Saving…</string>
+  <string name="settings_save_settings">Save settings</string>
+  <string name="settings_reminder_updated">Reminder updated</string>
+  <string name="settings_reminder_update_failed">Reminder could not be updated.</string>
+
+  <!-- Backup / restore -->
+  <string name="settings_backup_restore">Backup &amp; restore</string>
+  <string name="settings_backup_restore_copy">Life Load stores your data on this phone. Save a backup file before uninstalling, resetting, or changing devices.</string>
+  <string name="settings_export_backup">Save backup file</string>
+  <string name="settings_import_backup">Import backup file</string>
+  <string name="settings_import_backup_unavailable">Import reads a Life Load backup JSON file and replaces local check-ins, pending changes, profile setup, and signal data on this phone.</string>
+  <string name="settings_backup_account_title">Optional server backup</string>
+  <string name="settings_backup_account_copy">Sign in only if you want this phone to mirror saved changes to the alpha server. Life Load still works without internet or an account.</string>
+  <string name="settings_restore_from_server">Restore from server</string>
+  <string name="settings_backup_info_title">Server backup</string>
+  <string name="settings_backup_info_local_first">Your phone remains the main Life Load database. Sign-in is optional.</string>
+  <string name="settings_backup_info_remote_mirror">When signed in, saved local changes are queued and mirrored to your account on the alpha server when internet is available.</string>
+  <string name="settings_backup_info_restore">Restore from server is explicit. It imports server rows into this phone and does not erase newer pending local changes.</string>
+  <string name="settings_backup_info_limits">This is alpha backup infrastructure, not medical, emergency, or production-grade recovery support.</string>
+
+  <!-- Privacy -->
+  <string name="settings_privacy">Privacy &amp; data</string>
+  <string name="settings_privacy_copy">Review local data security and delete Life Load data stored on this phone.</string>
+  <string name="settings_security_button">Security</string>
+  <string name="settings_security_title">How Life Load protects data</string>
+  <string name="settings_security_intro">Life Load is designed to keep your check-ins, health context, and local history confidential.</string>
+  <string name="settings_security_local_first">Your main Life Load data is stored on this phone. This build does not offer production cloud backup or automatic device migration yet.</string>
+  <string name="settings_security_minimize">We keep server-facing and diagnostic surfaces narrow and redacted. They should use counts, status, timestamps, and error categories instead of private diary or health details.</string>
+  <string name="settings_security_limits">No app can promise perfect security. Keep your phone locked, protect exports, and delete local data before handing the device to someone else.</string>
+  <string name="settings_export_data">Export data</string>
+  <string name="settings_confirm_delete">Confirm delete</string>
+  <string name="settings_delete_local_data">Delete data on this phone</string>
+  <string name="settings_confirm_delete_copy">This will delete saved check-ins, pending changes, and export files stored on this phone.</string>
+
+  <!-- Language -->
+  <string name="settings_language_title">Language</string>
+  <string name="settings_language_current">App language</string>
+  <string name="settings_language_system_default">System default</string>
+  <string name="settings_language_english">English</string>
+  <string name="settings_language_german">Deutsch</string>
+  <string name="settings_language_helper">Changing language keeps your profile, check-ins, and backups unchanged.</string>
+
+  <!-- Developer / diagnostics -->
+  <string name="settings_developer_diagnostics">Developer / Diagnostics</string>
+  <string name="settings_server_url">Server URL</string>
+  <string name="settings_apply">Apply</string>
+  <string name="settings_default">Default</string>
+  <string name="settings_local_diagnostics">Local diagnostics</string>
+  <string name="check_in_header_with_status">Check-in · %1$s</string>
+  <string name="check_in_status_done">Done</string>
+  <string name="check_in_status_unsaved">Unsaved</string>
+  <string name="check_in_status_open">Open</string>
+  <string name="operator_diagnostics_actions">Operator actions</string>
+  <string name="operator_refresh_diagnostics">Refresh</string>
+  <string name="operator_refresh_diagnostics_help">Re-read diagnostics from this phone only. No sync or server write.</string>
+  <string name="operator_import_history">Import</string>
+  <string name="operator_import_history_help">Download recent server history into the phone local store.</string>
+  <string name="operator_sync_outbox">Sync</string>
+  <string name="operator_sync_outbox_help">Upload or retry pending local changes from the outbox.</string>
+  <string name="operator_mirror_debug">Mirror</string>
+  <string name="operator_mirror_debug_help">Send a redacted diagnostics snapshot to the developer server.</string>
+
+  <!-- P-MVP10 profile setup / beta review -->
+  <string name="profile_setup_dev_selector_title">Dev profile selector</string>
+  <string name="profile_name_personal_legacy">Personal Legacy</string>
+  <string name="profile_name_general_balance">General Balance</string>
+  <string name="profile_name_work_stress">Work Stress</string>
+  <string name="profile_name_training_recovery">Training Recovery</string>
+  <string name="profile_name_body_signal_awareness">Body Signal Awareness</string>
+  <string name="profile_name_custom">Custom</string>
+  <string name="profile_description_personal_legacy">Compatibility profile for the original personal setup.</string>
+  <string name="profile_description_general_balance">Everyday balance across energy, stress, recovery, body status, and load.</string>
+  <string name="profile_description_work_stress">Work pressure, recovery breaks, decompression, and energy.</string>
+  <string name="profile_description_training_recovery">Training load, body load, recovery, sleep, and energy.</string>
+  <string name="profile_description_body_signal_awareness">Body signals, recovery, energy, and simple next steps.</string>
+  <string name="profile_description_custom">Start with core signals and add a small private set.</string>
+  <string name="signal_label_core_sleep_ok">Sleep on time</string>
+  <string name="signal_label_core_nutrition_ok">Nutrition clean</string>
+  <string name="signal_label_mental_stress">Stress</string>
+  <string name="signal_label_energy_energy">Energy</string>
+  <string name="signal_label_mood_mood">Mood</string>
+  <string name="signal_label_recovery_shutdown_done">Shutdown done</string>
+  <string name="signal_label_recovery_decompression_done">Decompression done</string>
+  <string name="signal_label_recovery_after_work_decompression_done">After-work decompression</string>
+  <string name="signal_label_work_work_intensity">Work intensity</string>
+  <string name="signal_label_work_home_office">Home office</string>
+  <string name="signal_label_work_project_overrun">Project overrun</string>
+  <string name="signal_label_training_primary_activity_type">Primary activity type</string>
+  <string name="signal_label_training_activity_duration_min">Activity duration minutes</string>
+  <string name="signal_label_training_rehab_done">Rehab done</string>
+  <string name="signal_label_training_soreness">Soreness</string>
+  <string name="signal_label_body_migraine_warning">Migraine warning</string>
+  <string name="signal_label_body_foot_pain">Foot pain</string>
+  <string name="signal_label_body_shoulder_pain">Shoulder pain</string>
+  <string name="signal_label_body_body_signal">Body signal</string>
+  <string name="signal_label_nutrition_alcohol">Alcohol</string>
+  <string name="signal_label_nutrition_binge">Eating episode</string>
+  <string name="signal_label_evening_phone_after_21">Phone after 21:00</string>
+  <string name="signal_label_evening_chain_broken">Evening chain broken</string>
+  <string name="signal_label_relationship_family_stress">Family stress</string>
+  <string name="signal_label_relationship_wife_conflict_count">Relationship conflict count</string>
+  <string name="signal_label_relationship_wife_conflict_school">School conflict</string>
+  <string name="signal_label_relationship_wife_conflict_chores">Chores conflict</string>
+  <string name="signal_label_relationship_wife_conflict_other">Other relationship conflict</string>
+  <string name="signal_label_caregiving_alone_home">Alone home</string>
+  <string name="signal_label_caregiving_homework_done">Homework done</string>
+  <string name="signal_label_caregiving_homework_status">Homework status</string>
+  <string name="signal_label_stimulant_coffee_cups">Coffee cups</string>
+  <string name="signal_label_pattern_private_pull">Private pattern pull</string>
+  <string name="signal_label_pattern_protective_routine">Protective routine</string>
+  <string name="profile_onboarding_title">Life Load helps choose the next sustainable step.</string>
+  <string name="profile_onboarding_choose_focus">Choose focus</string>
+  <string name="profile_onboarding_preview_fields">Preview check-in fields</string>
+  <string name="profile_onboarding_privacy_boundary">Private wellness signal tracking. Not emergency support.</string>
+  <string name="profile_onboarding_start">Start first check-in</string>
+  <string name="tracking_setup_title">Customize Profile</string>
+  <string name="tracking_setup_intro">Choose the profile and daily signals Life Load uses.</string>
+  <string name="tracking_setup_history_note">Changing profiles keeps your history.</string>
+  <string name="tracking_setup_active_profile">Active profile: %1$s</string>
+  <string name="tracking_setup_settings_summary">Choose your profile and daily signals.</string>
+  <string name="tracking_setup_open">Open Customize Profile</string>
+  <string name="tracking_setup_close">Close Customize Profile</string>
+  <string name="tracking_setup_section_current_profile">Profile</string>
+  <string name="tracking_setup_section_packs">Optional packs</string>
+  <string name="tracking_setup_section_custom_setup">Custom setup</string>
+  <string name="tracking_setup_section_active_signals">Active signals</string>
+  <string name="tracking_setup_active_signals_privacy_note">These signals stay local unless you export them.</string>
+  <string name="profile_signal_help_default">This signal helps Life Load understand today’s load. Answer only if it feels useful; Not sure keeps it unknown.</string>
+  <string name="tracking_setup_reset_defaults">Reset defaults</string>
+  <string name="tracking_setup_selected_profile">Selected</string>
+  <string name="tracking_setup_pack_on">On</string>
+  <string name="tracking_setup_pack_off">Off</string>
+  <string name="tracking_setup_no_packs">No optional packs for this beta profile.</string>
+  <string name="optional_pack_life_load_name">Life Load</string>
+  <string name="optional_pack_life_load_description">Family, admin, schedule, and obligation pressure.</string>
+  <string name="pattern_awareness_name">Pattern Awareness</string>
+  <string name="pattern_awareness_description">Private pattern awareness. Optional. Wellness-only.</string>
+  <string name="profile_driven_checkin_title">Profile check-in</string>
+  <string name="profile_driven_checkin_complete">Complete profile check-in</string>
+  <string name="profile_field_not_sure">Not sure</string>
+  <string name="profile_field_yes">Yes</string>
+  <string name="profile_field_no">No</string>
+  <string name="profile_field_add_note">Add note</string>
+  <string name="profile_field_note_label">Optional note</string>
+  <string name="profile_field_readonly_derived">Calculated after check-in</string>
+  <string name="profile_field_minutes_short">%1$d min</string>
+  <string name="profile_field_enum_low">Low</string>
+  <string name="profile_field_enum_medium">Medium</string>
+  <string name="profile_field_enum_high">High</string>
+  <string name="custom_profile_title">Custom</string>
+  <string name="custom_profile_intro">Start with the basics, then add a few signals that matter to you.</string>
+  <string name="custom_profile_core_signals">Current core signals</string>
+  <string name="custom_profile_core_signal_summary">Sleep on time, Stress, Energy</string>
+  <string name="custom_signal_name_label">Custom signal name</string>
+  <string name="custom_signal_name_placeholder">Example: Admin load</string>
+  <string name="custom_profile_limit">Beta limit: add up to 3 custom signals.</string>
+  <string name="custom_signal_category">Signal category</string>
+  <string name="custom_signal_category_recovery">Recovery</string>
+  <string name="custom_signal_category_energy">Energy</string>
+  <string name="custom_signal_category_stress">Stress / mental load</string>
+  <string name="custom_signal_category_body">Body signal</string>
+  <string name="custom_signal_category_physical_load">Physical load</string>
+  <string name="custom_signal_category_life_load">Life load</string>
+  <string name="custom_signal_category_private_pattern">Private pattern</string>
+  <string name="custom_signal_category_protective_behavior">Protective behavior</string>
+  <string name="custom_signal_influence">Guidance influence</string>
+  <string name="custom_signal_guidance_track_only">Track only</string>
+  <string name="custom_signal_guidance_light">Light</string>
+  <string name="custom_signal_guidance_normal">Normal</string>
+  <string name="custom_signal_guidance_strong">Strong</string>
+  <string name="custom_signal_guidance_guardrail">Guardrail</string>
+  <string name="custom_signal_private_boundary">Custom signal labels stay private. Private pattern signals need calm safety wording and explicit opt-in.</string>
+  <string name="custom_signal_preview">Preview / confirm</string>
+  <string name="guidance_label_push">Push</string>
+  <string name="guidance_label_maintain">Maintain</string>
+  <string name="guidance_label_recover">Recover</string>
+  <string name="guidance_label_simplify">Simplify</string>
+  <string name="guidance_label_protect_sleep">Protect Sleep</string>
+  <string name="guidance_beta_today_suggestion">Today’s suggestion</string>
+  <string name="guidance_beta_top_drivers">Top drivers</string>
+  <string name="guidance_beta_recent_change">Recent change: %1$s</string>
+  <string name="guidance_beta_primary_action">Primary action</string>
+  <string name="guidance_beta_limited_confidence">Limited confidence: %1$s missing.</string>
+  <string name="guidance_beta_see_why">See why</string>
+  <string name="beta_status_title">About / beta status</string>
+  <string name="beta_status_version">Version %1$s (%2$d)</string>
+  <string name="beta_status_build_mode">Build mode: %1$s</string>
+  <string name="beta_status_build_mode_personal_legacy">Personal legacy</string>
+  <string name="beta_status_build_mode_beta_review">Beta review</string>
+  <string name="beta_status_current_mode">Current mode: %1$s</string>
+  <string name="beta_status_mode_personal_legacy">Personal legacy</string>
+  <string name="beta_status_mode_gated_beta">Gated profile beta</string>
+  <string name="beta_status_active_profile">Active profile: %1$s</string>
+  <string name="beta_status_profile_setup">Profile setup: %1$s</string>
+  <string name="beta_status_onboarding">Onboarding: %1$s</string>
+  <string name="beta_status_profile_checkin">Profile check-in: %1$s</string>
+  <string name="beta_status_enabled">enabled</string>
+  <string name="beta_status_disabled">disabled</string>
+  <string name="beta_status_local_first">Data stored on this phone. Export and delete controls are available in Settings.</string>
+  <string name="beta_status_wellness_boundary">Wellness guidance only. Not medical advice or emergency support.</string>
+  <string name="beta_status_personal_legacy_explanation">Personal legacy fields may appear in this build mode.</string>
+  <string name="beta_status_pattern_awareness_default_off">Pattern Awareness: Off by default</string>
+  <string name="beta_status_draft_bridge_limitation">Beta guidance uses the production generic-profile bridge. Formula threshold tuning remains a future experiment.</string>
+  <string name="beta_status_feedback">Report confusing guidance, privacy concerns, export/delete issues, layout problems, or anything that feels wrong.</string>
+  <string name="beta_status_send_feedback">Send feedback</string>
+  <string name="beta_status_feedback_mailto">maintainer@example.invalid</string>
+  <string name="beta_status_feedback_subject">Life Load beta feedback</string>
+  <string name="beta_status_section_build">Build</string>
+  <string name="beta_status_section_current_setup">Current setup</string>
+  <string name="beta_status_section_privacy">Privacy</string>
+  <string name="beta_status_section_boundary">Boundary</string>
+  <string name="beta_status_section_feedback">Feedback</string>
+  <string name="german_snapshot_guidance_rationale">Fake review data shows enough margin for a simple day plan.</string>
+  <string name="german_snapshot_recent_change">Recent pattern is improving.</string>
+  <string name="german_snapshot_primary_action">Keep the next step small and protect the evening routine.</string>
+  <string name="german_snapshot_limited_confidence">Limited confidence because only a few signals are filled.</string>
+  <string name="german_snapshot_normal_confidence">Normal confidence for this beta review scenario.</string>
+  <string name="german_snapshot_why_detail">Recent signals point to lower optional load and a calmer next step.</string>
+  <string name="german_snapshot_pattern_rationale">Private pattern signals are elevated, so today should stay simpler.</string>
+  <string name="german_snapshot_pattern_action">Choose one stabilizing action and keep the evening easy.</string>
+  <string name="german_snapshot_pattern_why">Pattern Awareness was explicitly enabled for this fake review scenario.</string>
+  <string name="runtime_beta_guidance_rationale_default">Today’s selected profile and signal entries are projected through the production generic-profile bridge.</string>
+  <string name="runtime_beta_guidance_rationale_simplify">Stress or low energy is present, so the safer beta guidance is to simplify before adding more load.</string>
+  <string name="runtime_beta_guidance_rationale_protect_sleep">Sleep was marked as not on time, so the safest next step is to protect tonight’s sleep.</string>
+  <string name="runtime_beta_guidance_rationale_recover">Training or body load is present with low recovery, so the next step is recovery-first.</string>
+  <string name="runtime_beta_guidance_rationale_push">Recovery and energy look available, so use capacity for the planned priority only.</string>
+  <string name="runtime_beta_guidance_driver_stress">Stress</string>
+  <string name="runtime_beta_guidance_driver_work_pressure">Work pressure</string>
+  <string name="runtime_beta_guidance_driver_work_spillover">Work spillover</string>
+  <string name="runtime_beta_guidance_driver_energy">Energy</string>
+  <string name="runtime_beta_guidance_driver_sleep">Sleep on time</string>
+  <string name="runtime_beta_guidance_driver_private_pattern">Private pattern</string>
+  <string name="runtime_beta_guidance_driver_decompression">Decompression</string>
+  <string name="runtime_beta_guidance_driver_training_load">Training load</string>
+  <string name="runtime_beta_guidance_driver_body_signal">Body signal</string>
+  <string name="runtime_beta_guidance_driver_protective_behavior">Protective behavior</string>
+  <string name="runtime_beta_guidance_driver_recovery">Recovery</string>
+  <string name="runtime_beta_guidance_driver_missing_data">Missing data</string>
+  <string name="runtime_beta_guidance_driver_recovery_steady">Recovery steady</string>
+  <string name="runtime_beta_guidance_driver_profile_signal">Profile signal</string>
+  <string name="runtime_beta_guidance_recent_change">Profile-driven guidance is using the production generic-profile bridge.</string>
+  <string name="runtime_beta_guidance_action_maintain">Stay with the plan and avoid adding bonus load.</string>
+  <string name="runtime_beta_guidance_action_maintain_recovery_protected">Keep the current shape and leave recovery protected.</string>
+  <string name="runtime_beta_guidance_action_maintain_stable">Stay with the plan and avoid adding bonus load.</string>
+  <string name="runtime_beta_guidance_action_simplify">Remove one optional task and keep the next step smaller.</string>
+  <string name="runtime_beta_guidance_action_protect_sleep">Protect the evening routine and make sleep the priority.</string>
+  <string name="runtime_beta_guidance_action_check_in_first">Complete a short check-in for a better suggestion.</string>
+  <string name="runtime_beta_guidance_action_protect_private_pattern">Make the evening simple and choose one stabilizing routine.</string>
+  <string name="runtime_beta_guidance_action_recover_body_signal">Keep load lighter and avoid adding strain today.</string>
+  <string name="runtime_beta_guidance_action_keep_training_easy">Keep training easy and stop before extra fatigue.</string>
+  <string name="runtime_beta_guidance_action_take_recovery_break">Choose a recovery-first day and keep load capped.</string>
+  <string name="runtime_beta_guidance_action_reduce_optional_work">Remove one optional work demand and protect a decompression break.</string>
+  <string name="runtime_beta_guidance_action_simplify_evening">Make the evening smaller and close one loop early.</string>
+  <string name="runtime_beta_guidance_action_push">Use the good capacity for the planned priority, not bonus load.</string>
+  <string name="runtime_beta_guidance_confidence_normal">Beta confidence: based on the profile check-in fields answered today.</string>
+  <string name="runtime_beta_guidance_confidence_limited">Limited confidence because required profile signals are missing.</string>
+  <string name="runtime_beta_guidance_missing_profile_signals">required profile signals</string>
+  <string name="runtime_beta_guidance_why_bridge">This projection uses the production generic-profile bridge and keeps current formula thresholds unchanged.</string>
+  <string name="runtime_beta_guidance_why_inputs">It uses selected profile config, enabled signals, and today’s profile-driven signal entries.</string>
+
+  <!-- Localized legacy runtime labels -->
+  <string name="legacy_status_checkin_saved">Check-in saved</string>
+  <string name="legacy_status_draft">Draft</string>
+  <string name="legacy_status_updated">updated</string>
+  <string name="legacy_support_alcohol">Alcohol exposure logged; protect tomorrow morning</string>
+  <string name="legacy_support_binge">Eating episode flagged recently; resume with the next normal meal</string>
+  <string name="legacy_support_sleep_drift">Sleep support needed</string>
+  <string name="legacy_support_garmin_short_sleep">Garmin sleep suggests extra recovery</string>
+  <string name="legacy_support_nutrition_drift">Food plan support needed</string>
+  <string name="legacy_support_recovery_compliance">Recovery habits slipping</string>
+  <string name="legacy_support_recovery_consistency">Recovery consistency falling</string>
+  <string name="legacy_support_historical_risk">Recent pattern suggests higher risk</string>
+  <string name="legacy_support_risk_high">Risk trend remains high</string>
+  <string name="legacy_support_relationship">Relationship stress logged</string>
+  <string name="legacy_support_relationship_repeated">Relationship stress repeated today</string>
+  <string name="legacy_support_school_conflict">School-related conflict added load</string>
+  <string name="legacy_support_training_low_base">Training increased from a low base</string>
+  <string name="legacy_support_training_acute">Recent training load is elevated</string>
+  <string name="legacy_support_training_rising">Training load is rising quickly</string>
+  <string name="legacy_support_chronic_ramp">Longer-term load is ramping</string>
+  <string name="legacy_support_garmin_high_stress">Garmin stress signal is high</string>
+  <string name="legacy_support_garmin_elevated_stress">Garmin stress signal is elevated</string>
+  <string name="legacy_support_hard_sessions">Multiple demanding sessions</string>
+  <string name="legacy_support_migraine">Migraine signal logged</string>
+  <string name="legacy_support_pain_flare">Pain signal needs protection</string>
+  <string name="legacy_support_shutdown">Shutdown support needed</string>
+  <string name="legacy_support_decompression">Decompression support needed</string>
+  <string name="legacy_support_after_work">After-work reset was missed</string>
+  <string name="legacy_support_late_phone">Late phone use logged</string>
+  <string name="legacy_support_project">Project time ran late</string>
+  <string name="legacy_support_evening_chain">Evening sequence needs support</string>
+  <string name="legacy_support_emotional">Emotional load is high</string>
+  <string name="legacy_support_emotional_accumulated">Emotional load is accumulating</string>
+  <string name="legacy_support_alone_home">Alone-at-home risk context</string>
+  <string name="legacy_support_alone_food">Alone-at-home food risk</string>
+  <string name="legacy_support_weight_rising">Weight trend is rising</string>
+  <string name="legacy_support_weight_reset">Weight reset signal</string>
+  <string name="legacy_support_missing_structured">A few fields are still unknown</string>
+  <string name="legacy_attention_loading_title">Loading</string>
+  <string name="legacy_attention_loading_body">Fetching the selected day and weekly dashboard.</string>
+  <string name="legacy_attention_ai_title">AI running</string>
+  <string name="legacy_attention_ai_body">Wait for analysis before correcting structured fields.</string>
+  <string name="legacy_attention_alcohol_title">Alcohol at home</string>
+  <string name="legacy_attention_alcohol_body">Hard support signal. Stabilization logic should win.</string>
+  <string name="legacy_attention_binge_title">Eating episode</string>
+  <string name="legacy_attention_binge_body">Use recovery protocol; no punishment workout or compensation fasting.</string>
+  <string name="legacy_attention_sleep_unknown_title">Sleep unknown</string>
+  <string name="legacy_attention_sleep_unknown_body">Set whether bedtime was on target.</string>
+  <string name="legacy_attention_nutrition_unknown_title">Nutrition unknown</string>
+  <string name="legacy_attention_nutrition_unknown_body">Set whether the day was clean enough.</string>
+  <string name="legacy_attention_shutdown_body">Protect tonight’s cutoff before adding ambition.</string>
+  <string name="legacy_attention_after_work_body">Release pressure before the evening decisions start.</string>
+  <string name="legacy_attention_evening_body">Treat this as sequence pressure, not a character problem.</string>
+  <string name="legacy_attention_late_phone_body">This is an early drift signal.</string>
+  <string name="legacy_attention_project_title">Project overrun</string>
+  <string name="legacy_attention_project_body">Personal project absorption is pushing load.</string>
+  <string name="legacy_attention_alone_title">Alone at home</string>
+  <string name="legacy_attention_alone_body">High-trigger context; pre-decide food, phone, and decompression.</string>
+  <string name="legacy_attention_foot_title">Foot pain %1$s/10</string>
+  <string name="legacy_attention_foot_body">Reduce impact and avoid progression.</string>
+  <string name="legacy_attention_shoulder_title">Shoulder pain %1$s/10</string>
+  <string name="legacy_attention_shoulder_body">Avoid pull-ups and overhead work.</string>
+  <string name="legacy_attention_stress_title">Stress %1$s/10</string>
+  <string name="legacy_attention_stress_body">Keep the next action small.</string>
+  <string name="legacy_attention_relationship_title">Relationship stress x%1$s</string>
+  <string name="legacy_attention_relationship_body">Strong eating-episode correlation signal; prioritize decompression and repair.</string>
+  <string name="legacy_attention_migraine_body">Hydration/recovery takes priority.</string>
+  <string name="legacy_attention_rehab_title">Rehab missed</string>
+  <string name="legacy_attention_rehab_body">A 10-minute shoulder/foot session still counts.</string>
+  <string name="compass_clipboard_copied">Copied</string>
+  <string name="compass_clipboard_pasted">Pasted</string>
+  <string name="compass_clipboard_empty">Nothing to paste</string>
+  <string name="compass_operator_formula_version">Formula version: %1$s</string>
+  <string name="compass_operator_backend">Backend: %1$s</string>
+  <string name="compass_operator_database">Database: %1$s</string>
+  <string name="compass_operator_sync">Sync: %1$s</string>
+  <string name="compass_operator_local_counts">Entries %1$d · outbox %2$d · conflicts %3$d</string>
+  <string name="compass_recent_path_accessibility_point">%1$s: %2$s, %3$s</string>
+  <string name="compass_recent_path_accessibility_missing">Day %1$d: missing</string>
+  <string name="compass_recent_path_complete">complete</string>
+  <string name="compass_recent_path_partial">partial</string>
+  <string name="compass_recent_path_accessibility_summary">Recent path. %1$s</string>
+  <string name="compass_intensity_none">%1$d · none</string>
+  <string name="compass_intensity_low">%1$d · low</string>
+  <string name="compass_intensity_moderate">%1$d · moderate</string>
+  <string name="compass_intensity_high">%1$d · high</string>
+  <string name="compass_intensity_very_high">%1$d · very high</string>
+  <string name="compass_intensity_extreme">%1$d · extreme</string>
+  <string name="operator_diag_schema">Schema</string>
+  <string name="operator_diag_redaction">Redaction</string>
+  <string name="operator_diag_entries">Entries</string>
+  <string name="operator_diag_approved">Approved</string>
+  <string name="operator_diag_drafts">Drafts</string>
+  <string name="operator_diag_outbox">Outbox</string>
+  <string name="operator_diag_conflicts">Conflicts</string>
+  <string name="operator_diag_pending">Pending</string>
+  <string name="operator_diag_backend">Backend</string>
+  <string name="operator_diag_database_short">DB</string>
+  <string name="operator_diag_sync">Sync</string>
+  <string name="operator_diag_analysis">Analysis</string>
+  <string name="operator_diag_state">State</string>
+  <string name="operator_diag_selected">Selected</string>
+  <string name="operator_none">none</string>
+
+  <!-- Check-in explanation footer rotation -->
+  <string-array name="compass_encouragement_lines">
+    <item>One small step is enough for tonight.</item>
+    <item>Keep it simple. That is the plan.</item>
+    <item>You do not need a perfect day for this to count.</item>
+    <item>The useful move is the next small one.</item>
+    <item>Coming back to the check-in is already useful.</item>
+    <item>Protecting recovery is progress.</item>
+    <item>Small signals are easier to change when they are visible.</item>
+    <item>A rough check-in is better than losing the pattern.</item>
+    <item>The goal is not perfection. The goal is orientation.</item>
+    <item>Choose the next step you can actually do.</item>
+    <item>Keep the next action small enough to repeat.</item>
+    <item>You can leave the rest for tomorrow.</item>
+    <item>Specific plans are easier to act on than vague intentions.</item>
+    <item>Repeated patterns matter more than one difficult day.</item>
+    <item>More complete check-ins make guidance more reliable.</item>
+    <item>Tracking works best when it helps you choose one concrete next step.</item>
+    <item>Small adjustments are easier to repeat than big resets.</item>
+    <item>A visible pattern is easier to work with than a hidden one.</item>
+    <item>Planning research: a 26-study physical-activity meta-analysis found a small-to-medium effect for if-then plans (g=0.31; 95%% CI 0.11-0.51). Source: Bélanger-Gravel et al., 2013.</item>
+    <item>Planning research: follow-up effects for if-then plans remained positive in the same review (g=0.24; 95%% CI 0.13-0.35). Source: Bélanger-Gravel et al., 2013.</item>
+    <item>mHealth research: one app experiment found self-affirmation boosters improved goal adherence (P=.04). Source: Springer et al., 2018.</item>
+    <item>mHealth review: common behavior-change tools included self-monitoring, performance feedback, and tailored messages. Source: Schoeppe et al., 2016.</item>
+  </string-array>
+</resources>

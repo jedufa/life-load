@@ -1,0 +1,176 @@
+{
+  "schema_version": "life_load_platform_contract_v1",
+  "entry_fields": [
+    "date",
+    "diary_text",
+    "diary_summary",
+    "tags",
+    "sleep_ok",
+    "nutrition_ok",
+    "alcohol",
+    "binge",
+    "mood",
+    "stress",
+    "energy",
+    "coffee_cups",
+    "foot_pain",
+    "shoulder_pain",
+    "migraine_warning",
+    "decompression_done",
+    "after_work_decompression_done",
+    "evening_chain_broken",
+    "shutdown_done",
+    "phone_after_21",
+    "project_overrun",
+    "primary_activity_type",
+    "activity_types",
+    "activity_duration_min",
+    "rehab_done",
+    "other_symptoms",
+    "work_intensity",
+    "family_stress",
+    "wife_conflict_count",
+    "wife_conflict_school",
+    "wife_conflict_chores",
+    "wife_conflict_other",
+    "home_office",
+    "alone_home",
+    "homework_done"
+  ],
+  "trend": {
+    "feature_fields": [
+      "life_load_rolling_avg_7d",
+      "acute_load_7d",
+      "acute_strain_7d",
+      "acute_training_load_7d",
+      "chronic_life_load_42d",
+      "chronic_training_load_42d",
+      "chronic_capacity_42d",
+      "life_margin_7d",
+      "training_margin_7d",
+      "red_flag_count_7d",
+      "drift_risk_score",
+      "recommended_mode",
+      "sleep_compliance_7d",
+      "nutrition_compliance_7d",
+      "project_overrun_count_7d",
+      "project_overrun_weighted_7d",
+      "project_overrun_recent_count_3d",
+      "project_overrun_older_count_4_to_7d",
+      "project_overrun_most_recent_days_ago",
+      "project_overrun_trend",
+      "phone_after_21_count_7d",
+      "phone_after_21_weighted_7d",
+      "phone_after_21_recent_count_3d",
+      "phone_after_21_older_count_4_to_7d",
+      "phone_after_21_most_recent_days_ago",
+      "phone_after_21_trend",
+      "alone_home_count_7d",
+      "pain_avg_7d",
+      "stress_avg_7d",
+      "energy_avg_7d",
+      "recovery_compliance_7d"
+    ],
+    "chart": {
+      "window_days": 14,
+      "load_field": "acute_load_7d",
+      "load_fallback_field": "life_load_rolling_avg_7d",
+      "capacity_field": "chronic_capacity_42d",
+      "shared_zero_based_y_axis": true,
+      "minimum_y_max": 10
+    }
+  },
+  "formula": {
+    "schema_version": "life_load_formula_v1",
+    "sections": [
+      {
+        "title": "Life load",
+        "body": "Life load = strain + training. Recovery is tracked separately as capacity.",
+        "items": [
+          {"input": "Life load", "effect": "strain + training"},
+          {"input": "Net pressure", "effect": "life load - recovery"},
+          {"input": "Zones", "effect": "red if hard support signals are present or net >= 10; orange >= 6; yellow >= 3"}
+        ]
+      },
+      {
+        "title": "Training Load",
+        "body": "Activity points are duration-sensitive, capped per session, and Garmin/manual duplicates are merged.",
+        "items": [
+          {"input": "Run", "effect": "2.0 per 30 min, cap 8.0"},
+          {"input": "CrossFit", "effect": "2.4 per 30 min, cap 8.0"},
+          {"input": "Strength", "effect": "1.6 per 30 min, cap 6.0"},
+          {"input": "Bike commute", "effect": "0.55 per 30 min, cap 4.0"},
+          {"input": "Sport bike", "effect": "1.1 per 30 min, cap 6.0"},
+          {"input": "Walk", "effect": "0.35 per 30 min, cap 3.0"},
+          {"input": "Rehab", "effect": "0.25 per 30 min, cap 3.0"},
+          {"input": "Hard/heavy intensity", "effect": "x1.25 multiplier"},
+          {"input": "Light intensity", "effect": "x0.8 multiplier"}
+        ]
+      },
+      {
+        "title": "Training Trend Brake",
+        "body": "ATL/CTL style load history prevents motivation spikes from being treated as free capacity.",
+        "items": [
+          {"input": "ATL", "effect": "7-day EWMA training load"},
+          {"input": "CTL", "effect": "42-day EWMA training base"},
+          {"input": "Low-base spike", "effect": "+2 strain if today >= 3 and CTL < 1"},
+          {"input": "Ratio >= 1.5", "effect": "+2 strain"},
+          {"input": "Ratio >= 1.3", "effect": "+1 strain"}
+        ]
+      },
+      {
+        "title": "Strain Points",
+        "body": "Strain deliberately includes emotional overload and sequence failures, not only sport.",
+        "items": [
+          {"input": "Stress", "effect": "+0.7 per point"},
+          {"input": "Foot pain", "effect": "+0.5 per point"},
+          {"input": "Shoulder pain", "effect": "+0.4 per point"},
+          {"input": "Family stress", "effect": "+0.5 per point"},
+          {"input": "Relationship stress moments", "effect": "+2 each, capped at +7"},
+          {"input": "Alcohol exposure", "effect": "+4 and hard support signal"},
+          {"input": "Eating episode", "effect": "+5 and hard support signal"},
+          {"input": "Missed after-work decompression", "effect": "+3"},
+          {"input": "Evening sequence support", "effect": "+3"},
+          {"input": "Alone at home", "effect": "+2.5"}
+        ]
+      },
+      {
+        "title": "Recovery Points",
+        "body": "Recovery rewards buffers that make the evening and next morning easier.",
+        "items": [
+          {"input": "Sleep on time", "effect": "+2"},
+          {"input": "Nutrition clean", "effect": "+2"},
+          {"input": "Energy", "effect": "+0.4 per point"},
+          {"input": "Mood", "effect": "+0.3 per point"},
+          {"input": "Shutdown done", "effect": "+2"},
+          {"input": "Decompression done", "effect": "+1.75"},
+          {"input": "After-work decompression", "effect": "+1.25"},
+          {"input": "Recovery activity", "effect": "+0.5 to +1.25 from walk/rehab/meditation"}
+        ]
+      },
+      {
+        "title": "Formula Toggles",
+        "body": "Settings can remove optional context from scoring. Disabled signals must not affect strain, recovery, support signals, or visible reasons.",
+        "items": [
+          {"input": "include_training_trend_brake", "effect": "Controls ATL/CTL spike strain and training trend warnings"},
+          {"input": "include_garmin_recovery", "effect": "Controls Garmin sleep, stress, steps, active calories, and passive recovery context"},
+          {"input": "include_relationship_stress", "effect": "Controls relationship conflict strain and relationship support reasons"},
+          {"input": "include_alone_home", "effect": "Controls alone-at-home strain and food-risk support reasons"},
+          {"input": "include_after_work_decompression", "effect": "Controls after-work decompression recovery or missed-reset strain"},
+          {"input": "include_project_overrun", "effect": "Controls project spillover strain and support reasons"},
+          {"input": "include_late_phone", "effect": "Controls late-phone strain and support reasons"},
+          {"input": "include_home_office", "effect": "Controls home-office context strain"}
+        ]
+      }
+    ]
+  },
+  "garmin_import": {
+    "schema_version": "life_load_garmin_import_contract_v1",
+    "idempotency": "passive summaries upsert by date; Garmin activities upsert by Garmin activity id",
+    "automatic_refresh": {
+      "entry_load_days_with_explicit_date": 1,
+      "entry_load_days_without_date": 3,
+      "freshness_minutes": 180
+    }
+  }
+}
